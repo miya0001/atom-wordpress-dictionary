@@ -1,6 +1,6 @@
 {
   "name": "wordpress-dictionary",
-  "version": "4.3.0.1",
+  "version": "4.3.1",
   "description": "Snippets of all WordPress functions, filter hooks and action hooks",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
