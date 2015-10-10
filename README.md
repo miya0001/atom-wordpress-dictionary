@@ -1,5 +1,19 @@
-# atom-wordpress-dictionary package
+# wordpress-dictionary for Atom
 
-A short description of your package.
+Snippets of all WordPress functions, filter hooks and action hooks for [Atom](https://atom.io/) editor.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## Installation
+
+Run the following command:
+
+```sh
+apm install wordpress-dictionary
+```
+Alternatively go to `Atom > Preferences > Packages` and search for `wordpress-dictionary`.
+
+See also:
+
+https://github.com/miya0001/vim-dict-wordpress
+
+## History
+See [Release Notes](https://github.com/miya0001/atom-wordpress-dictionary/releases)

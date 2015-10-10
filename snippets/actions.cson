@@ -1,4 +1,1651 @@
-".text.html":
-	"admin_menu":
-		"prefix": "admin_menu"
-		"body": "add_action( \"admin_menu\", ${1:\\$callback} )"
+'.source.php':
+  'action: _admin_menu':
+    'prefix': '_admin_menu'
+    'body': 'add_action( "_admin_menu", ${1} )'
+  'action: _core_updated_successfully':
+    'prefix': '_core_updated_successfully'
+    'body': 'add_action( "_core_updated_successfully", ${1} )'
+  'action: _network_admin_menu':
+    'prefix': '_network_admin_menu'
+    'body': 'add_action( "_network_admin_menu", ${1} )'
+  'action: _user_admin_menu':
+    'prefix': '_user_admin_menu'
+    'body': 'add_action( "_user_admin_menu", ${1} )'
+  'action: _wp_put_post_revision':
+    'prefix': '_wp_put_post_revision'
+    'body': 'add_action( "_wp_put_post_revision", ${1} )'
+  'action: activate_':
+    'prefix': 'activate_'
+    'body': 'add_action( "activate_", ${1} )'
+  'action: activate_blog':
+    'prefix': 'activate_blog'
+    'body': 'add_action( "activate_blog", ${1} )'
+  'action: activate_header':
+    'prefix': 'activate_header'
+    'body': 'add_action( "activate_header", ${1} )'
+  'action: activate_plugin':
+    'prefix': 'activate_plugin'
+    'body': 'add_action( "activate_plugin", ${1} )'
+  'action: activate_wp_head':
+    'prefix': 'activate_wp_head'
+    'body': 'add_action( "activate_wp_head", ${1} )'
+  'action: activate_{$plugin}':
+    'prefix': 'activate_{$plugin}'
+    'body': 'add_action( "activate_{$plugin}", ${1} )'
+  'action: activated_plugin':
+    'prefix': 'activated_plugin'
+    'body': 'add_action( "activated_plugin", ${1} )'
+  'action: activity_box_end':
+    'prefix': 'activity_box_end'
+    'body': 'add_action( "activity_box_end", ${1} )'
+  'action: add_admin_bar_menus':
+    'prefix': 'add_admin_bar_menus'
+    'body': 'add_action( "add_admin_bar_menus", ${1} )'
+  'action: add_attachment':
+    'prefix': 'add_attachment'
+    'body': 'add_action( "add_attachment", ${1} )'
+  'action: add_category_form_pre':
+    'prefix': 'add_category_form_pre'
+    'body': 'add_action( "add_category_form_pre", ${1} )'
+  'action: add_link':
+    'prefix': 'add_link'
+    'body': 'add_action( "add_link", ${1} )'
+  'action: add_link_category_form_pre':
+    'prefix': 'add_link_category_form_pre'
+    'body': 'add_action( "add_link_category_form_pre", ${1} )'
+  'action: add_meta_boxes':
+    'prefix': 'add_meta_boxes'
+    'body': 'add_action( "add_meta_boxes", ${1} )'
+  'action: add_meta_boxes_':
+    'prefix': 'add_meta_boxes_'
+    'body': 'add_action( "add_meta_boxes_", ${1} )'
+  'action: add_meta_boxes_comment':
+    'prefix': 'add_meta_boxes_comment'
+    'body': 'add_action( "add_meta_boxes_comment", ${1} )'
+  'action: add_meta_boxes_link':
+    'prefix': 'add_meta_boxes_link'
+    'body': 'add_action( "add_meta_boxes_link", ${1} )'
+  'action: add_option':
+    'prefix': 'add_option'
+    'body': 'add_action( "add_option", ${1} )'
+  'action: add_option_{$option}':
+    'prefix': 'add_option_{$option}'
+    'body': 'add_action( "add_option_{$option}", ${1} )'
+  'action: add_site_option':
+    'prefix': 'add_site_option'
+    'body': 'add_action( "add_site_option", ${1} )'
+  'action: add_site_option_{$option}':
+    'prefix': 'add_site_option_{$option}'
+    'body': 'add_action( "add_site_option_{$option}", ${1} )'
+  'action: add_tag_form':
+    'prefix': 'add_tag_form'
+    'body': 'add_action( "add_tag_form", ${1} )'
+  'action: add_tag_form_fields':
+    'prefix': 'add_tag_form_fields'
+    'body': 'add_action( "add_tag_form_fields", ${1} )'
+  'action: add_tag_form_pre':
+    'prefix': 'add_tag_form_pre'
+    'body': 'add_action( "add_tag_form_pre", ${1} )'
+  'action: add_term_relationship':
+    'prefix': 'add_term_relationship'
+    'body': 'add_action( "add_term_relationship", ${1} )'
+  'action: add_user_role':
+    'prefix': 'add_user_role'
+    'body': 'add_action( "add_user_role", ${1} )'
+  'action: add_user_to_blog':
+    'prefix': 'add_user_to_blog'
+    'body': 'add_action( "add_user_to_blog", ${1} )'
+  'action: add_{$meta_type}_meta':
+    'prefix': 'add_{$meta_type}_meta'
+    'body': 'add_action( "add_{$meta_type}_meta", ${1} )'
+  'action: added_existing_user':
+    'prefix': 'added_existing_user'
+    'body': 'add_action( "added_existing_user", ${1} )'
+  'action: added_option':
+    'prefix': 'added_option'
+    'body': 'add_action( "added_option", ${1} )'
+  'action: added_term_relationship':
+    'prefix': 'added_term_relationship'
+    'body': 'add_action( "added_term_relationship", ${1} )'
+  'action: added_usermeta':
+    'prefix': 'added_usermeta'
+    'body': 'add_action( "added_usermeta", ${1} )'
+  'action: added_{$meta_type}_meta':
+    'prefix': 'added_{$meta_type}_meta'
+    'body': 'add_action( "added_{$meta_type}_meta", ${1} )'
+  'action: admin_action_':
+    'prefix': 'admin_action_'
+    'body': 'add_action( "admin_action_", ${1} )'
+  'action: admin_bar_init':
+    'prefix': 'admin_bar_init'
+    'body': 'add_action( "admin_bar_init", ${1} )'
+  'action: admin_color_scheme_picker':
+    'prefix': 'admin_color_scheme_picker'
+    'body': 'add_action( "admin_color_scheme_picker", ${1} )'
+  'action: admin_enqueue_scripts':
+    'prefix': 'admin_enqueue_scripts'
+    'body': 'add_action( "admin_enqueue_scripts", ${1} )'
+  'action: admin_footer':
+    'prefix': 'admin_footer'
+    'body': 'add_action( "admin_footer", ${1} )'
+  'action: admin_footer-':
+    'prefix': 'admin_footer-'
+    'body': 'add_action( "admin_footer-", ${1} )'
+  'action: admin_footer-press-this.php':
+    'prefix': 'admin_footer-press-this.php'
+    'body': 'add_action( "admin_footer-press-this.php", ${1} )'
+  'action: admin_footer-widgets.php':
+    'prefix': 'admin_footer-widgets.php'
+    'body': 'add_action( "admin_footer-widgets.php", ${1} )'
+  'action: admin_head':
+    'prefix': 'admin_head'
+    'body': 'add_action( "admin_head", ${1} )'
+  'action: admin_head-$hook_suffix':
+    'prefix': 'admin_head-$hook_suffix'
+    'body': 'add_action( "admin_head-$hook_suffix", ${1} )'
+  'action: admin_head-media-upload-popup':
+    'prefix': 'admin_head-media-upload-popup'
+    'body': 'add_action( "admin_head-media-upload-popup", ${1} )'
+  'action: admin_head-press-this.php':
+    'prefix': 'admin_head-press-this.php'
+    'body': 'add_action( "admin_head-press-this.php", ${1} )'
+  'action: admin_head_{$content_func}':
+    'prefix': 'admin_head_{$content_func}'
+    'body': 'add_action( "admin_head_{$content_func}", ${1} )'
+  'action: admin_init':
+    'prefix': 'admin_init'
+    'body': 'add_action( "admin_init", ${1} )'
+  'action: admin_menu':
+    'prefix': 'admin_menu'
+    'body': 'add_action( "admin_menu", ${1} )'
+  'action: admin_notices':
+    'prefix': 'admin_notices'
+    'body': 'add_action( "admin_notices", ${1} )'
+  'action: admin_page_access_denied':
+    'prefix': 'admin_page_access_denied'
+    'body': 'add_action( "admin_page_access_denied", ${1} )'
+  'action: admin_post':
+    'prefix': 'admin_post'
+    'body': 'add_action( "admin_post", ${1} )'
+  'action: admin_post_nopriv':
+    'prefix': 'admin_post_nopriv'
+    'body': 'add_action( "admin_post_nopriv", ${1} )'
+  'action: admin_post_nopriv_{$action}':
+    'prefix': 'admin_post_nopriv_{$action}'
+    'body': 'add_action( "admin_post_nopriv_{$action}", ${1} )'
+  'action: admin_post_{$action}':
+    'prefix': 'admin_post_{$action}'
+    'body': 'add_action( "admin_post_{$action}", ${1} )'
+  'action: admin_print_footer_scripts':
+    'prefix': 'admin_print_footer_scripts'
+    'body': 'add_action( "admin_print_footer_scripts", ${1} )'
+  'action: admin_print_scripts':
+    'prefix': 'admin_print_scripts'
+    'body': 'add_action( "admin_print_scripts", ${1} )'
+  'action: admin_print_scripts-$hook_suffix':
+    'prefix': 'admin_print_scripts-$hook_suffix'
+    'body': 'add_action( "admin_print_scripts-$hook_suffix", ${1} )'
+  'action: admin_print_scripts-media-upload-popup':
+    'prefix': 'admin_print_scripts-media-upload-popup'
+    'body': 'add_action( "admin_print_scripts-media-upload-popup", ${1} )'
+  'action: admin_print_scripts-press-this.php':
+    'prefix': 'admin_print_scripts-press-this.php'
+    'body': 'add_action( "admin_print_scripts-press-this.php", ${1} )'
+  'action: admin_print_scripts-widgets.php':
+    'prefix': 'admin_print_scripts-widgets.php'
+    'body': 'add_action( "admin_print_scripts-widgets.php", ${1} )'
+  'action: admin_print_styles':
+    'prefix': 'admin_print_styles'
+    'body': 'add_action( "admin_print_styles", ${1} )'
+  'action: admin_print_styles-$hook_suffix':
+    'prefix': 'admin_print_styles-$hook_suffix'
+    'body': 'add_action( "admin_print_styles-$hook_suffix", ${1} )'
+  'action: admin_print_styles-media-upload-popup':
+    'prefix': 'admin_print_styles-media-upload-popup'
+    'body': 'add_action( "admin_print_styles-media-upload-popup", ${1} )'
+  'action: admin_print_styles-press-this.php':
+    'prefix': 'admin_print_styles-press-this.php'
+    'body': 'add_action( "admin_print_styles-press-this.php", ${1} )'
+  'action: admin_print_styles-widgets.php':
+    'prefix': 'admin_print_styles-widgets.php'
+    'body': 'add_action( "admin_print_styles-widgets.php", ${1} )'
+  'action: admin_xml_ns':
+    'prefix': 'admin_xml_ns'
+    'body': 'add_action( "admin_xml_ns", ${1} )'
+  'action: adminmenu':
+    'prefix': 'adminmenu'
+    'body': 'add_action( "adminmenu", ${1} )'
+  'action: after-{$taxonomy}-table':
+    'prefix': 'after-{$taxonomy}-table'
+    'body': 'add_action( "after-{$taxonomy}-table", ${1} )'
+  'action: after_db_upgrade':
+    'prefix': 'after_db_upgrade'
+    'body': 'add_action( "after_db_upgrade", ${1} )'
+  'action: after_delete_post':
+    'prefix': 'after_delete_post'
+    'body': 'add_action( "after_delete_post", ${1} )'
+  'action: after_menu_locations_table':
+    'prefix': 'after_menu_locations_table'
+    'body': 'add_action( "after_menu_locations_table", ${1} )'
+  'action: after_mu_upgrade':
+    'prefix': 'after_mu_upgrade'
+    'body': 'add_action( "after_mu_upgrade", ${1} )'
+  'action: after_plugin_row':
+    'prefix': 'after_plugin_row'
+    'body': 'add_action( "after_plugin_row", ${1} )'
+  'action: after_plugin_row_$plugin_file':
+    'prefix': 'after_plugin_row_$plugin_file'
+    'body': 'add_action( "after_plugin_row_$plugin_file", ${1} )'
+  'action: after_setup_theme':
+    'prefix': 'after_setup_theme'
+    'body': 'add_action( "after_setup_theme", ${1} )'
+  'action: after_signup_form':
+    'prefix': 'after_signup_form'
+    'body': 'add_action( "after_signup_form", ${1} )'
+  'action: after_switch_theme':
+    'prefix': 'after_switch_theme'
+    'body': 'add_action( "after_switch_theme", ${1} )'
+  'action: after_theme_row':
+    'prefix': 'after_theme_row'
+    'body': 'add_action( "after_theme_row", ${1} )'
+  'action: after_theme_row_$stylesheet':
+    'prefix': 'after_theme_row_$stylesheet'
+    'body': 'add_action( "after_theme_row_$stylesheet", ${1} )'
+  'action: after_wp_tiny_mce':
+    'prefix': 'after_wp_tiny_mce'
+    'body': 'add_action( "after_wp_tiny_mce", ${1} )'
+  'action: all_admin_notices':
+    'prefix': 'all_admin_notices'
+    'body': 'add_action( "all_admin_notices", ${1} )'
+  'action: archive_blog':
+    'prefix': 'archive_blog'
+    'body': 'add_action( "archive_blog", ${1} )'
+  'action: atom_author':
+    'prefix': 'atom_author'
+    'body': 'add_action( "atom_author", ${1} )'
+  'action: atom_comments_ns':
+    'prefix': 'atom_comments_ns'
+    'body': 'add_action( "atom_comments_ns", ${1} )'
+  'action: atom_entry':
+    'prefix': 'atom_entry'
+    'body': 'add_action( "atom_entry", ${1} )'
+  'action: atom_head':
+    'prefix': 'atom_head'
+    'body': 'add_action( "atom_head", ${1} )'
+  'action: atom_ns':
+    'prefix': 'atom_ns'
+    'body': 'add_action( "atom_ns", ${1} )'
+  'action: attachment_submitbox_misc_actions':
+    'prefix': 'attachment_submitbox_misc_actions'
+    'body': 'add_action( "attachment_submitbox_misc_actions", ${1} )'
+  'action: auth_cookie_bad_hash':
+    'prefix': 'auth_cookie_bad_hash'
+    'body': 'add_action( "auth_cookie_bad_hash", ${1} )'
+  'action: auth_cookie_bad_session_token':
+    'prefix': 'auth_cookie_bad_session_token'
+    'body': 'add_action( "auth_cookie_bad_session_token", ${1} )'
+  'action: auth_cookie_bad_username':
+    'prefix': 'auth_cookie_bad_username'
+    'body': 'add_action( "auth_cookie_bad_username", ${1} )'
+  'action: auth_cookie_expired':
+    'prefix': 'auth_cookie_expired'
+    'body': 'add_action( "auth_cookie_expired", ${1} )'
+  'action: auth_cookie_malformed':
+    'prefix': 'auth_cookie_malformed'
+    'body': 'add_action( "auth_cookie_malformed", ${1} )'
+  'action: auth_cookie_valid':
+    'prefix': 'auth_cookie_valid'
+    'body': 'add_action( "auth_cookie_valid", ${1} )'
+  'action: auth_redirect':
+    'prefix': 'auth_redirect'
+    'body': 'add_action( "auth_redirect", ${1} )'
+  'action: automatic_updates_complete':
+    'prefix': 'automatic_updates_complete'
+    'body': 'add_action( "automatic_updates_complete", ${1} )'
+  'action: before_delete_post':
+    'prefix': 'before_delete_post'
+    'body': 'add_action( "before_delete_post", ${1} )'
+  'action: before_signup_form':
+    'prefix': 'before_signup_form'
+    'body': 'add_action( "before_signup_form", ${1} )'
+  'action: before_wp_tiny_mce':
+    'prefix': 'before_wp_tiny_mce'
+    'body': 'add_action( "before_wp_tiny_mce", ${1} )'
+  'action: begin_fetch_post_thumbnail_html':
+    'prefix': 'begin_fetch_post_thumbnail_html'
+    'body': 'add_action( "begin_fetch_post_thumbnail_html", ${1} )'
+  'action: blog_privacy_selector':
+    'prefix': 'blog_privacy_selector'
+    'body': 'add_action( "blog_privacy_selector", ${1} )'
+  'action: bulk_edit_custom_box':
+    'prefix': 'bulk_edit_custom_box'
+    'body': 'add_action( "bulk_edit_custom_box", ${1} )'
+  'action: check_admin_referer':
+    'prefix': 'check_admin_referer'
+    'body': 'add_action( "check_admin_referer", ${1} )'
+  'action: check_ajax_referer':
+    'prefix': 'check_ajax_referer'
+    'body': 'add_action( "check_ajax_referer", ${1} )'
+  'action: clean_attachment_cache':
+    'prefix': 'clean_attachment_cache'
+    'body': 'add_action( "clean_attachment_cache", ${1} )'
+  'action: clean_object_term_cache':
+    'prefix': 'clean_object_term_cache'
+    'body': 'add_action( "clean_object_term_cache", ${1} )'
+  'action: clean_page_cache':
+    'prefix': 'clean_page_cache'
+    'body': 'add_action( "clean_page_cache", ${1} )'
+  'action: clean_post_cache':
+    'prefix': 'clean_post_cache'
+    'body': 'add_action( "clean_post_cache", ${1} )'
+  'action: clean_term_cache':
+    'prefix': 'clean_term_cache'
+    'body': 'add_action( "clean_term_cache", ${1} )'
+  'action: clear_auth_cookie':
+    'prefix': 'clear_auth_cookie'
+    'body': 'add_action( "clear_auth_cookie", ${1} )'
+  'action: comment_atom_entry':
+    'prefix': 'comment_atom_entry'
+    'body': 'add_action( "comment_atom_entry", ${1} )'
+  'action: comment_closed':
+    'prefix': 'comment_closed'
+    'body': 'add_action( "comment_closed", ${1} )'
+  'action: comment_duplicate_trigger':
+    'prefix': 'comment_duplicate_trigger'
+    'body': 'add_action( "comment_duplicate_trigger", ${1} )'
+  'action: comment_flood_trigger':
+    'prefix': 'comment_flood_trigger'
+    'body': 'add_action( "comment_flood_trigger", ${1} )'
+  'action: comment_form':
+    'prefix': 'comment_form'
+    'body': 'add_action( "comment_form", ${1} )'
+  'action: comment_form_after':
+    'prefix': 'comment_form_after'
+    'body': 'add_action( "comment_form_after", ${1} )'
+  'action: comment_form_after_fields':
+    'prefix': 'comment_form_after_fields'
+    'body': 'add_action( "comment_form_after_fields", ${1} )'
+  'action: comment_form_before':
+    'prefix': 'comment_form_before'
+    'body': 'add_action( "comment_form_before", ${1} )'
+  'action: comment_form_before_fields':
+    'prefix': 'comment_form_before_fields'
+    'body': 'add_action( "comment_form_before_fields", ${1} )'
+  'action: comment_form_comments_closed':
+    'prefix': 'comment_form_comments_closed'
+    'body': 'add_action( "comment_form_comments_closed", ${1} )'
+  'action: comment_form_logged_in_after':
+    'prefix': 'comment_form_logged_in_after'
+    'body': 'add_action( "comment_form_logged_in_after", ${1} )'
+  'action: comment_form_must_log_in_after':
+    'prefix': 'comment_form_must_log_in_after'
+    'body': 'add_action( "comment_form_must_log_in_after", ${1} )'
+  'action: comment_form_top':
+    'prefix': 'comment_form_top'
+    'body': 'add_action( "comment_form_top", ${1} )'
+  'action: comment_id_not_found':
+    'prefix': 'comment_id_not_found'
+    'body': 'add_action( "comment_id_not_found", ${1} )'
+  'action: comment_loop_start':
+    'prefix': 'comment_loop_start'
+    'body': 'add_action( "comment_loop_start", ${1} )'
+  'action: comment_on_draft':
+    'prefix': 'comment_on_draft'
+    'body': 'add_action( "comment_on_draft", ${1} )'
+  'action: comment_on_password_protected':
+    'prefix': 'comment_on_password_protected'
+    'body': 'add_action( "comment_on_password_protected", ${1} )'
+  'action: comment_on_trash':
+    'prefix': 'comment_on_trash'
+    'body': 'add_action( "comment_on_trash", ${1} )'
+  'action: comment_post':
+    'prefix': 'comment_post'
+    'body': 'add_action( "comment_post", ${1} )'
+  'action: comment_{$new_status}_{$comment->comment_type}':
+    'prefix': 'comment_{$new_status}_{$comment->comment_type}'
+    'body': 'add_action( "comment_{$new_status}_{$comment->comment_type}", ${1} )'
+  'action: comment_{$old_status}_to_{$new_status}':
+    'prefix': 'comment_{$old_status}_to_{$new_status}'
+    'body': 'add_action( "comment_{$old_status}_to_{$new_status}", ${1} )'
+  'action: commentrss2_item':
+    'prefix': 'commentrss2_item'
+    'body': 'add_action( "commentrss2_item", ${1} )'
+  'action: comments_atom_head':
+    'prefix': 'comments_atom_head'
+    'body': 'add_action( "comments_atom_head", ${1} )'
+  'action: commentsrss2_head':
+    'prefix': 'commentsrss2_head'
+    'body': 'add_action( "commentsrss2_head", ${1} )'
+  'action: core_upgrade_preamble':
+    'prefix': 'core_upgrade_preamble'
+    'body': 'add_action( "core_upgrade_preamble", ${1} )'
+  'action: create_$taxonomy':
+    'prefix': 'create_$taxonomy'
+    'body': 'add_action( "create_$taxonomy", ${1} )'
+  'action: create_term':
+    'prefix': 'create_term'
+    'body': 'add_action( "create_term", ${1} )'
+  'action: created_$taxonomy':
+    'prefix': 'created_$taxonomy'
+    'body': 'add_action( "created_$taxonomy", ${1} )'
+  'action: created_term':
+    'prefix': 'created_term'
+    'body': 'add_action( "created_term", ${1} )'
+  'action: current_screen':
+    'prefix': 'current_screen'
+    'body': 'add_action( "current_screen", ${1} )'
+  'action: custom_header_options':
+    'prefix': 'custom_header_options'
+    'body': 'add_action( "custom_header_options", ${1} )'
+  'action: customize_controls_enqueue_scripts':
+    'prefix': 'customize_controls_enqueue_scripts'
+    'body': 'add_action( "customize_controls_enqueue_scripts", ${1} )'
+  'action: customize_controls_init':
+    'prefix': 'customize_controls_init'
+    'body': 'add_action( "customize_controls_init", ${1} )'
+  'action: customize_controls_print_footer_scripts':
+    'prefix': 'customize_controls_print_footer_scripts'
+    'body': 'add_action( "customize_controls_print_footer_scripts", ${1} )'
+  'action: customize_controls_print_scripts':
+    'prefix': 'customize_controls_print_scripts'
+    'body': 'add_action( "customize_controls_print_scripts", ${1} )'
+  'action: customize_controls_print_styles':
+    'prefix': 'customize_controls_print_styles'
+    'body': 'add_action( "customize_controls_print_styles", ${1} )'
+  'action: customize_preview_init':
+    'prefix': 'customize_preview_init'
+    'body': 'add_action( "customize_preview_init", ${1} )'
+  'action: customize_preview_{$this->id}':
+    'prefix': 'customize_preview_{$this->id}'
+    'body': 'add_action( "customize_preview_{$this->id}", ${1} )'
+  'action: customize_preview_{$this->type}':
+    'prefix': 'customize_preview_{$this->type}'
+    'body': 'add_action( "customize_preview_{$this->type}", ${1} )'
+  'action: customize_register':
+    'prefix': 'customize_register'
+    'body': 'add_action( "customize_register", ${1} )'
+  'action: customize_render_control':
+    'prefix': 'customize_render_control'
+    'body': 'add_action( "customize_render_control", ${1} )'
+  'action: customize_render_control_':
+    'prefix': 'customize_render_control_'
+    'body': 'add_action( "customize_render_control_", ${1} )'
+  'action: customize_render_panel':
+    'prefix': 'customize_render_panel'
+    'body': 'add_action( "customize_render_panel", ${1} )'
+  'action: customize_render_panel_{$this->id}':
+    'prefix': 'customize_render_panel_{$this->id}'
+    'body': 'add_action( "customize_render_panel_{$this->id}", ${1} )'
+  'action: customize_render_section':
+    'prefix': 'customize_render_section'
+    'body': 'add_action( "customize_render_section", ${1} )'
+  'action: customize_render_section_{$this->id}':
+    'prefix': 'customize_render_section_{$this->id}'
+    'body': 'add_action( "customize_render_section_{$this->id}", ${1} )'
+  'action: customize_save':
+    'prefix': 'customize_save'
+    'body': 'add_action( "customize_save", ${1} )'
+  'action: customize_save_':
+    'prefix': 'customize_save_'
+    'body': 'add_action( "customize_save_", ${1} )'
+  'action: customize_save_after':
+    'prefix': 'customize_save_after'
+    'body': 'add_action( "customize_save_after", ${1} )'
+  'action: customize_update_':
+    'prefix': 'customize_update_'
+    'body': 'add_action( "customize_update_", ${1} )'
+  'action: dbx_post_advanced':
+    'prefix': 'dbx_post_advanced'
+    'body': 'add_action( "dbx_post_advanced", ${1} )'
+  'action: dbx_post_sidebar':
+    'prefix': 'dbx_post_sidebar'
+    'body': 'add_action( "dbx_post_sidebar", ${1} )'
+  'action: deactivate_':
+    'prefix': 'deactivate_'
+    'body': 'add_action( "deactivate_", ${1} )'
+  'action: deactivate_blog':
+    'prefix': 'deactivate_blog'
+    'body': 'add_action( "deactivate_blog", ${1} )'
+  'action: deactivate_plugin':
+    'prefix': 'deactivate_plugin'
+    'body': 'add_action( "deactivate_plugin", ${1} )'
+  'action: deactivated_plugin':
+    'prefix': 'deactivated_plugin'
+    'body': 'add_action( "deactivated_plugin", ${1} )'
+  'action: delete_$taxonomy':
+    'prefix': 'delete_$taxonomy'
+    'body': 'add_action( "delete_$taxonomy", ${1} )'
+  'action: delete_attachment':
+    'prefix': 'delete_attachment'
+    'body': 'add_action( "delete_attachment", ${1} )'
+  'action: delete_blog':
+    'prefix': 'delete_blog'
+    'body': 'add_action( "delete_blog", ${1} )'
+  'action: delete_comment':
+    'prefix': 'delete_comment'
+    'body': 'add_action( "delete_comment", ${1} )'
+  'action: delete_link':
+    'prefix': 'delete_link'
+    'body': 'add_action( "delete_link", ${1} )'
+  'action: delete_option':
+    'prefix': 'delete_option'
+    'body': 'add_action( "delete_option", ${1} )'
+  'action: delete_option_$option':
+    'prefix': 'delete_option_$option'
+    'body': 'add_action( "delete_option_$option", ${1} )'
+  'action: delete_post':
+    'prefix': 'delete_post'
+    'body': 'add_action( "delete_post", ${1} )'
+  'action: delete_postmeta':
+    'prefix': 'delete_postmeta'
+    'body': 'add_action( "delete_postmeta", ${1} )'
+  'action: delete_site_option':
+    'prefix': 'delete_site_option'
+    'body': 'add_action( "delete_site_option", ${1} )'
+  'action: delete_site_option_{$option}':
+    'prefix': 'delete_site_option_{$option}'
+    'body': 'add_action( "delete_site_option_{$option}", ${1} )'
+  'action: delete_site_transient_':
+    'prefix': 'delete_site_transient_'
+    'body': 'add_action( "delete_site_transient_", ${1} )'
+  'action: delete_term':
+    'prefix': 'delete_term'
+    'body': 'add_action( "delete_term", ${1} )'
+  'action: delete_term_relationships':
+    'prefix': 'delete_term_relationships'
+    'body': 'add_action( "delete_term_relationships", ${1} )'
+  'action: delete_term_taxonomy':
+    'prefix': 'delete_term_taxonomy'
+    'body': 'add_action( "delete_term_taxonomy", ${1} )'
+  'action: delete_transient_':
+    'prefix': 'delete_transient_'
+    'body': 'add_action( "delete_transient_", ${1} )'
+  'action: delete_user':
+    'prefix': 'delete_user'
+    'body': 'add_action( "delete_user", ${1} )'
+  'action: delete_user_form':
+    'prefix': 'delete_user_form'
+    'body': 'add_action( "delete_user_form", ${1} )'
+  'action: delete_usermeta':
+    'prefix': 'delete_usermeta'
+    'body': 'add_action( "delete_usermeta", ${1} )'
+  'action: delete_{$meta_type}_meta':
+    'prefix': 'delete_{$meta_type}_meta'
+    'body': 'add_action( "delete_{$meta_type}_meta", ${1} )'
+  'action: delete_{$meta_type}meta':
+    'prefix': 'delete_{$meta_type}meta'
+    'body': 'add_action( "delete_{$meta_type}meta", ${1} )'
+  'action: deleted_comment':
+    'prefix': 'deleted_comment'
+    'body': 'add_action( "deleted_comment", ${1} )'
+  'action: deleted_link':
+    'prefix': 'deleted_link'
+    'body': 'add_action( "deleted_link", ${1} )'
+  'action: deleted_option':
+    'prefix': 'deleted_option'
+    'body': 'add_action( "deleted_option", ${1} )'
+  'action: deleted_post':
+    'prefix': 'deleted_post'
+    'body': 'add_action( "deleted_post", ${1} )'
+  'action: deleted_postmeta':
+    'prefix': 'deleted_postmeta'
+    'body': 'add_action( "deleted_postmeta", ${1} )'
+  'action: deleted_site_transient':
+    'prefix': 'deleted_site_transient'
+    'body': 'add_action( "deleted_site_transient", ${1} )'
+  'action: deleted_term_relationships':
+    'prefix': 'deleted_term_relationships'
+    'body': 'add_action( "deleted_term_relationships", ${1} )'
+  'action: deleted_term_taxonomy':
+    'prefix': 'deleted_term_taxonomy'
+    'body': 'add_action( "deleted_term_taxonomy", ${1} )'
+  'action: deleted_transient':
+    'prefix': 'deleted_transient'
+    'body': 'add_action( "deleted_transient", ${1} )'
+  'action: deleted_user':
+    'prefix': 'deleted_user'
+    'body': 'add_action( "deleted_user", ${1} )'
+  'action: deleted_usermeta':
+    'prefix': 'deleted_usermeta'
+    'body': 'add_action( "deleted_usermeta", ${1} )'
+  'action: deleted_{$meta_type}_meta':
+    'prefix': 'deleted_{$meta_type}_meta'
+    'body': 'add_action( "deleted_{$meta_type}_meta", ${1} )'
+  'action: deleted_{$meta_type}meta':
+    'prefix': 'deleted_{$meta_type}meta'
+    'body': 'add_action( "deleted_{$meta_type}meta", ${1} )'
+  'action: deprecated_argument_run':
+    'prefix': 'deprecated_argument_run'
+    'body': 'add_action( "deprecated_argument_run", ${1} )'
+  'action: deprecated_constructor_run':
+    'prefix': 'deprecated_constructor_run'
+    'body': 'add_action( "deprecated_constructor_run", ${1} )'
+  'action: deprecated_file_included':
+    'prefix': 'deprecated_file_included'
+    'body': 'add_action( "deprecated_file_included", ${1} )'
+  'action: deprecated_function_run':
+    'prefix': 'deprecated_function_run'
+    'body': 'add_action( "deprecated_function_run", ${1} )'
+  'action: do_action':
+    'prefix': 'do_action'
+    'body': 'add_action( "do_action", ${1} )'
+  'action: do_actionbelow':
+    'prefix': 'do_actionbelow'
+    'body': 'add_action( "do_actionbelow", ${1} )'
+  'action: do_meta_boxes':
+    'prefix': 'do_meta_boxes'
+    'body': 'add_action( "do_meta_boxes", ${1} )'
+  'action: do_robots':
+    'prefix': 'do_robots'
+    'body': 'add_action( "do_robots", ${1} )'
+  'action: do_robotstxt':
+    'prefix': 'do_robotstxt'
+    'body': 'add_action( "do_robotstxt", ${1} )'
+  'action: doing_it_wrong_run':
+    'prefix': 'doing_it_wrong_run'
+    'body': 'add_action( "doing_it_wrong_run", ${1} )'
+  'action: dynamic_sidebar':
+    'prefix': 'dynamic_sidebar'
+    'body': 'add_action( "dynamic_sidebar", ${1} )'
+  'action: dynamic_sidebar_after':
+    'prefix': 'dynamic_sidebar_after'
+    'body': 'add_action( "dynamic_sidebar_after", ${1} )'
+  'action: dynamic_sidebar_before':
+    'prefix': 'dynamic_sidebar_before'
+    'body': 'add_action( "dynamic_sidebar_before", ${1} )'
+  'action: edit_$taxonomy':
+    'prefix': 'edit_$taxonomy'
+    'body': 'add_action( "edit_$taxonomy", ${1} )'
+  'action: edit_attachment':
+    'prefix': 'edit_attachment'
+    'body': 'add_action( "edit_attachment", ${1} )'
+  'action: edit_category_form':
+    'prefix': 'edit_category_form'
+    'body': 'add_action( "edit_category_form", ${1} )'
+  'action: edit_category_form_fields':
+    'prefix': 'edit_category_form_fields'
+    'body': 'add_action( "edit_category_form_fields", ${1} )'
+  'action: edit_category_form_pre':
+    'prefix': 'edit_category_form_pre'
+    'body': 'add_action( "edit_category_form_pre", ${1} )'
+  'action: edit_comment':
+    'prefix': 'edit_comment'
+    'body': 'add_action( "edit_comment", ${1} )'
+  'action: edit_form_advanced':
+    'prefix': 'edit_form_advanced'
+    'body': 'add_action( "edit_form_advanced", ${1} )'
+  'action: edit_form_after_editor':
+    'prefix': 'edit_form_after_editor'
+    'body': 'add_action( "edit_form_after_editor", ${1} )'
+  'action: edit_form_after_title':
+    'prefix': 'edit_form_after_title'
+    'body': 'add_action( "edit_form_after_title", ${1} )'
+  'action: edit_form_before_permalink':
+    'prefix': 'edit_form_before_permalink'
+    'body': 'add_action( "edit_form_before_permalink", ${1} )'
+  'action: edit_form_top':
+    'prefix': 'edit_form_top'
+    'body': 'add_action( "edit_form_top", ${1} )'
+  'action: edit_link':
+    'prefix': 'edit_link'
+    'body': 'add_action( "edit_link", ${1} )'
+  'action: edit_link_category_form':
+    'prefix': 'edit_link_category_form'
+    'body': 'add_action( "edit_link_category_form", ${1} )'
+  'action: edit_link_category_form_fields':
+    'prefix': 'edit_link_category_form_fields'
+    'body': 'add_action( "edit_link_category_form_fields", ${1} )'
+  'action: edit_link_category_form_pre':
+    'prefix': 'edit_link_category_form_pre'
+    'body': 'add_action( "edit_link_category_form_pre", ${1} )'
+  'action: edit_page_form':
+    'prefix': 'edit_page_form'
+    'body': 'add_action( "edit_page_form", ${1} )'
+  'action: edit_post':
+    'prefix': 'edit_post'
+    'body': 'add_action( "edit_post", ${1} )'
+  'action: edit_tag_form':
+    'prefix': 'edit_tag_form'
+    'body': 'add_action( "edit_tag_form", ${1} )'
+  'action: edit_tag_form_fields':
+    'prefix': 'edit_tag_form_fields'
+    'body': 'add_action( "edit_tag_form_fields", ${1} )'
+  'action: edit_tag_form_pre':
+    'prefix': 'edit_tag_form_pre'
+    'body': 'add_action( "edit_tag_form_pre", ${1} )'
+  'action: edit_term':
+    'prefix': 'edit_term'
+    'body': 'add_action( "edit_term", ${1} )'
+  'action: edit_term_taxonomies':
+    'prefix': 'edit_term_taxonomies'
+    'body': 'add_action( "edit_term_taxonomies", ${1} )'
+  'action: edit_term_taxonomy':
+    'prefix': 'edit_term_taxonomy'
+    'body': 'add_action( "edit_term_taxonomy", ${1} )'
+  'action: edit_terms':
+    'prefix': 'edit_terms'
+    'body': 'add_action( "edit_terms", ${1} )'
+  'action: edit_user_profile':
+    'prefix': 'edit_user_profile'
+    'body': 'add_action( "edit_user_profile", ${1} )'
+  'action: edit_user_profile_update':
+    'prefix': 'edit_user_profile_update'
+    'body': 'add_action( "edit_user_profile_update", ${1} )'
+  'action: edited_$taxonomy':
+    'prefix': 'edited_$taxonomy'
+    'body': 'add_action( "edited_$taxonomy", ${1} )'
+  'action: edited_term':
+    'prefix': 'edited_term'
+    'body': 'add_action( "edited_term", ${1} )'
+  'action: edited_term_taxonomies':
+    'prefix': 'edited_term_taxonomies'
+    'body': 'add_action( "edited_term_taxonomies", ${1} )'
+  'action: edited_term_taxonomy':
+    'prefix': 'edited_term_taxonomy'
+    'body': 'add_action( "edited_term_taxonomy", ${1} )'
+  'action: edited_terms':
+    'prefix': 'edited_terms'
+    'body': 'add_action( "edited_terms", ${1} )'
+  'action: end_fetch_post_thumbnail_html':
+    'prefix': 'end_fetch_post_thumbnail_html'
+    'body': 'add_action( "end_fetch_post_thumbnail_html", ${1} )'
+  'action: export_filters':
+    'prefix': 'export_filters'
+    'body': 'add_action( "export_filters", ${1} )'
+  'action: export_wp':
+    'prefix': 'export_wp'
+    'body': 'add_action( "export_wp", ${1} )'
+  'action: get_footer':
+    'prefix': 'get_footer'
+    'body': 'add_action( "get_footer", ${1} )'
+  'action: get_header':
+    'prefix': 'get_header'
+    'body': 'add_action( "get_header", ${1} )'
+  'action: get_sidebar':
+    'prefix': 'get_sidebar'
+    'body': 'add_action( "get_sidebar", ${1} )'
+  'action: get_template_part_{$slug}':
+    'prefix': 'get_template_part_{$slug}'
+    'body': 'add_action( "get_template_part_{$slug}", ${1} )'
+  'action: grant_super_admin':
+    'prefix': 'grant_super_admin'
+    'body': 'add_action( "grant_super_admin", ${1} )'
+  'action: granted_super_admin':
+    'prefix': 'granted_super_admin'
+    'body': 'add_action( "granted_super_admin", ${1} )'
+  'action: heartbeat_nopriv_tick':
+    'prefix': 'heartbeat_nopriv_tick'
+    'body': 'add_action( "heartbeat_nopriv_tick", ${1} )'
+  'action: heartbeat_tick':
+    'prefix': 'heartbeat_tick'
+    'body': 'add_action( "heartbeat_tick", ${1} )'
+  'action: http_api_debug':
+    'prefix': 'http_api_debug'
+    'body': 'add_action( "http_api_debug", ${1} )'
+  'action: in_admin_footer':
+    'prefix': 'in_admin_footer'
+    'body': 'add_action( "in_admin_footer", ${1} )'
+  'action: in_admin_header':
+    'prefix': 'in_admin_header'
+    'body': 'add_action( "in_admin_header", ${1} )'
+  'action: in_plugin_update_message-{$file}':
+    'prefix': 'in_plugin_update_message-{$file}'
+    'body': 'add_action( "in_plugin_update_message-{$file}", ${1} )'
+  'action: in_theme_update_message-{$theme_key}':
+    'prefix': 'in_theme_update_message-{$theme_key}'
+    'body': 'add_action( "in_theme_update_message-{$theme_key}", ${1} )'
+  'action: init':
+    'prefix': 'init'
+    'body': 'add_action( "init", ${1} )'
+  'action: install_plugins_$tab':
+    'prefix': 'install_plugins_$tab'
+    'body': 'add_action( "install_plugins_$tab", ${1} )'
+  'action: install_plugins_pre_$tab':
+    'prefix': 'install_plugins_pre_$tab'
+    'body': 'add_action( "install_plugins_pre_$tab", ${1} )'
+  'action: install_plugins_table_header':
+    'prefix': 'install_plugins_table_header'
+    'body': 'add_action( "install_plugins_table_header", ${1} )'
+  'action: install_themes_pre_{$tab}':
+    'prefix': 'install_themes_pre_{$tab}'
+    'body': 'add_action( "install_themes_pre_{$tab}", ${1} )'
+  'action: install_themes_table_header':
+    'prefix': 'install_themes_table_header'
+    'body': 'add_action( "install_themes_table_header", ${1} )'
+  'action: install_themes_{$tab}':
+    'prefix': 'install_themes_{$tab}'
+    'body': 'add_action( "install_themes_{$tab}", ${1} )'
+  'action: load-':
+    'prefix': 'load-'
+    'body': 'add_action( "load-", ${1} )'
+  'action: load-categories.php':
+    'prefix': 'load-categories.php'
+    'body': 'add_action( "load-categories.php", ${1} )'
+  'action: load-edit-link-categories.php':
+    'prefix': 'load-edit-link-categories.php'
+    'body': 'add_action( "load-edit-link-categories.php", ${1} )'
+  'action: load-importer-':
+    'prefix': 'load-importer-'
+    'body': 'add_action( "load-importer-", ${1} )'
+  'action: load-page-new.php':
+    'prefix': 'load-page-new.php'
+    'body': 'add_action( "load-page-new.php", ${1} )'
+  'action: load-page.php':
+    'prefix': 'load-page.php'
+    'body': 'add_action( "load-page.php", ${1} )'
+  'action: load-widgets.php':
+    'prefix': 'load-widgets.php'
+    'body': 'add_action( "load-widgets.php", ${1} )'
+  'action: load_feed_engine':
+    'prefix': 'load_feed_engine'
+    'body': 'add_action( "load_feed_engine", ${1} )'
+  'action: load_textdomain':
+    'prefix': 'load_textdomain'
+    'body': 'add_action( "load_textdomain", ${1} )'
+  'action: login_enqueue_scripts':
+    'prefix': 'login_enqueue_scripts'
+    'body': 'add_action( "login_enqueue_scripts", ${1} )'
+  'action: login_footer':
+    'prefix': 'login_footer'
+    'body': 'add_action( "login_footer", ${1} )'
+  'action: login_form':
+    'prefix': 'login_form'
+    'body': 'add_action( "login_form", ${1} )'
+  'action: login_form_':
+    'prefix': 'login_form_'
+    'body': 'add_action( "login_form_", ${1} )'
+  'action: login_head':
+    'prefix': 'login_head'
+    'body': 'add_action( "login_head", ${1} )'
+  'action: login_init':
+    'prefix': 'login_init'
+    'body': 'add_action( "login_init", ${1} )'
+  'action: lost_password':
+    'prefix': 'lost_password'
+    'body': 'add_action( "lost_password", ${1} )'
+  'action: lostpassword_form':
+    'prefix': 'lostpassword_form'
+    'body': 'add_action( "lostpassword_form", ${1} )'
+  'action: lostpassword_post':
+    'prefix': 'lostpassword_post'
+    'body': 'add_action( "lostpassword_post", ${1} )'
+  'action: make_delete_blog':
+    'prefix': 'make_delete_blog'
+    'body': 'add_action( "make_delete_blog", ${1} )'
+  'action: make_ham_blog':
+    'prefix': 'make_ham_blog'
+    'body': 'add_action( "make_ham_blog", ${1} )'
+  'action: make_ham_user':
+    'prefix': 'make_ham_user'
+    'body': 'add_action( "make_ham_user", ${1} )'
+  'action: make_spam_blog':
+    'prefix': 'make_spam_blog'
+    'body': 'add_action( "make_spam_blog", ${1} )'
+  'action: make_spam_user':
+    'prefix': 'make_spam_user'
+    'body': 'add_action( "make_spam_user", ${1} )'
+  'action: make_undelete_blog':
+    'prefix': 'make_undelete_blog'
+    'body': 'add_action( "make_undelete_blog", ${1} )'
+  'action: manage_comments_custom_column':
+    'prefix': 'manage_comments_custom_column'
+    'body': 'add_action( "manage_comments_custom_column", ${1} )'
+  'action: manage_comments_nav':
+    'prefix': 'manage_comments_nav'
+    'body': 'add_action( "manage_comments_nav", ${1} )'
+  'action: manage_link_custom_column':
+    'prefix': 'manage_link_custom_column'
+    'body': 'add_action( "manage_link_custom_column", ${1} )'
+  'action: manage_media_custom_column':
+    'prefix': 'manage_media_custom_column'
+    'body': 'add_action( "manage_media_custom_column", ${1} )'
+  'action: manage_pages_custom_column':
+    'prefix': 'manage_pages_custom_column'
+    'body': 'add_action( "manage_pages_custom_column", ${1} )'
+  'action: manage_plugins_custom_column':
+    'prefix': 'manage_plugins_custom_column'
+    'body': 'add_action( "manage_plugins_custom_column", ${1} )'
+  'action: manage_posts_custom_column':
+    'prefix': 'manage_posts_custom_column'
+    'body': 'add_action( "manage_posts_custom_column", ${1} )'
+  'action: manage_sites_custom_column':
+    'prefix': 'manage_sites_custom_column'
+    'body': 'add_action( "manage_sites_custom_column", ${1} )'
+  'action: manage_themes_custom_column':
+    'prefix': 'manage_themes_custom_column'
+    'body': 'add_action( "manage_themes_custom_column", ${1} )'
+  'action: manage_{$post->post_type}_posts_custom_column':
+    'prefix': 'manage_{$post->post_type}_posts_custom_column'
+    'body': 'add_action( "manage_{$post->post_type}_posts_custom_column", ${1} )'
+  'action: mature_blog':
+    'prefix': 'mature_blog'
+    'body': 'add_action( "mature_blog", ${1} )'
+  'action: media_buttons':
+    'prefix': 'media_buttons'
+    'body': 'add_action( "media_buttons", ${1} )'
+  'action: media_upload_$tab':
+    'prefix': 'media_upload_$tab'
+    'body': 'add_action( "media_upload_$tab", ${1} )'
+  'action: media_upload_$type':
+    'prefix': 'media_upload_$type'
+    'body': 'add_action( "media_upload_$type", ${1} )'
+  'action: ms_site_not_found':
+    'prefix': 'ms_site_not_found'
+    'body': 'add_action( "ms_site_not_found", ${1} )'
+  'action: mu_activity_box_end':
+    'prefix': 'mu_activity_box_end'
+    'body': 'add_action( "mu_activity_box_end", ${1} )'
+  'action: mu_rightnow_end':
+    'prefix': 'mu_rightnow_end'
+    'body': 'add_action( "mu_rightnow_end", ${1} )'
+  'action: muplugins_loaded':
+    'prefix': 'muplugins_loaded'
+    'body': 'add_action( "muplugins_loaded", ${1} )'
+  'action: myblogs_allblogs_options':
+    'prefix': 'myblogs_allblogs_options'
+    'body': 'add_action( "myblogs_allblogs_options", ${1} )'
+  'action: network_admin_edit_':
+    'prefix': 'network_admin_edit_'
+    'body': 'add_action( "network_admin_edit_", ${1} )'
+  'action: network_admin_menu':
+    'prefix': 'network_admin_menu'
+    'body': 'add_action( "network_admin_menu", ${1} )'
+  'action: network_admin_notices':
+    'prefix': 'network_admin_notices'
+    'body': 'add_action( "network_admin_notices", ${1} )'
+  'action: network_site_users_after_list_table':
+    'prefix': 'network_site_users_after_list_table'
+    'body': 'add_action( "network_site_users_after_list_table", ${1} )'
+  'action: opml_head':
+    'prefix': 'opml_head'
+    'body': 'add_action( "opml_head", ${1} )'
+  'action: parse_tax_query':
+    'prefix': 'parse_tax_query'
+    'body': 'add_action( "parse_tax_query", ${1} )'
+  'action: password_reset':
+    'prefix': 'password_reset'
+    'body': 'add_action( "password_reset", ${1} )'
+  'action: permalink_structure_changed':
+    'prefix': 'permalink_structure_changed'
+    'body': 'add_action( "permalink_structure_changed", ${1} )'
+  'action: personal_options':
+    'prefix': 'personal_options'
+    'body': 'add_action( "personal_options", ${1} )'
+  'action: personal_options_update':
+    'prefix': 'personal_options_update'
+    'body': 'add_action( "personal_options_update", ${1} )'
+  'action: pingback_post':
+    'prefix': 'pingback_post'
+    'body': 'add_action( "pingback_post", ${1} )'
+  'action: plugins_loaded':
+    'prefix': 'plugins_loaded'
+    'body': 'add_action( "plugins_loaded", ${1} )'
+  'action: populate_options':
+    'prefix': 'populate_options'
+    'body': 'add_action( "populate_options", ${1} )'
+  'action: post-html-upload-ui':
+    'prefix': 'post-html-upload-ui'
+    'body': 'add_action( "post-html-upload-ui", ${1} )'
+  'action: post-plupload-upload-ui':
+    'prefix': 'post-plupload-upload-ui'
+    'body': 'add_action( "post-plupload-upload-ui", ${1} )'
+  'action: post-upload-ui':
+    'prefix': 'post-upload-ui'
+    'body': 'add_action( "post-upload-ui", ${1} )'
+  'action: post_comment_status_meta_box-options':
+    'prefix': 'post_comment_status_meta_box-options'
+    'body': 'add_action( "post_comment_status_meta_box-options", ${1} )'
+  'action: post_edit_form_tag':
+    'prefix': 'post_edit_form_tag'
+    'body': 'add_action( "post_edit_form_tag", ${1} )'
+  'action: post_lock_lost_dialog':
+    'prefix': 'post_lock_lost_dialog'
+    'body': 'add_action( "post_lock_lost_dialog", ${1} )'
+  'action: post_locked_dialog':
+    'prefix': 'post_locked_dialog'
+    'body': 'add_action( "post_locked_dialog", ${1} )'
+  'action: post_submitbox_misc_actions':
+    'prefix': 'post_submitbox_misc_actions'
+    'body': 'add_action( "post_submitbox_misc_actions", ${1} )'
+  'action: post_submitbox_start':
+    'prefix': 'post_submitbox_start'
+    'body': 'add_action( "post_submitbox_start", ${1} )'
+  'action: post_updated':
+    'prefix': 'post_updated'
+    'body': 'add_action( "post_updated", ${1} )'
+  'action: posts_selection':
+    'prefix': 'posts_selection'
+    'body': 'add_action( "posts_selection", ${1} )'
+  'action: pre-html-upload-ui':
+    'prefix': 'pre-html-upload-ui'
+    'body': 'add_action( "pre-html-upload-ui", ${1} )'
+  'action: pre-plupload-upload-ui':
+    'prefix': 'pre-plupload-upload-ui'
+    'body': 'add_action( "pre-plupload-upload-ui", ${1} )'
+  'action: pre-upload-ui':
+    'prefix': 'pre-upload-ui'
+    'body': 'add_action( "pre-upload-ui", ${1} )'
+  'action: pre_comment_on_post':
+    'prefix': 'pre_comment_on_post'
+    'body': 'add_action( "pre_comment_on_post", ${1} )'
+  'action: pre_current_active_plugins':
+    'prefix': 'pre_current_active_plugins'
+    'body': 'add_action( "pre_current_active_plugins", ${1} )'
+  'action: pre_delete_site_option_':
+    'prefix': 'pre_delete_site_option_'
+    'body': 'add_action( "pre_delete_site_option_", ${1} )'
+  'action: pre_delete_term':
+    'prefix': 'pre_delete_term'
+    'body': 'add_action( "pre_delete_term", ${1} )'
+  'action: pre_get_search_form':
+    'prefix': 'pre_get_search_form'
+    'body': 'add_action( "pre_get_search_form", ${1} )'
+  'action: pre_get_users':
+    'prefix': 'pre_get_users'
+    'body': 'add_action( "pre_get_users", ${1} )'
+  'action: pre_post_update':
+    'prefix': 'pre_post_update'
+    'body': 'add_action( "pre_post_update", ${1} )'
+  'action: preprocess_signup_form':
+    'prefix': 'preprocess_signup_form'
+    'body': 'add_action( "preprocess_signup_form", ${1} )'
+  'action: print_media_templates':
+    'prefix': 'print_media_templates'
+    'body': 'add_action( "print_media_templates", ${1} )'
+  'action: private_to_published':
+    'prefix': 'private_to_published'
+    'body': 'add_action( "private_to_published", ${1} )'
+  'action: profile_personal_options':
+    'prefix': 'profile_personal_options'
+    'body': 'add_action( "profile_personal_options", ${1} )'
+  'action: profile_update':
+    'prefix': 'profile_update'
+    'body': 'add_action( "profile_update", ${1} )'
+  'action: publish_phone':
+    'prefix': 'publish_phone'
+    'body': 'add_action( "publish_phone", ${1} )'
+  'action: quick_edit_custom_box':
+    'prefix': 'quick_edit_custom_box'
+    'body': 'add_action( "quick_edit_custom_box", ${1} )'
+  'action: rdf_header':
+    'prefix': 'rdf_header'
+    'body': 'add_action( "rdf_header", ${1} )'
+  'action: rdf_item':
+    'prefix': 'rdf_item'
+    'body': 'add_action( "rdf_item", ${1} )'
+  'action: rdf_ns':
+    'prefix': 'rdf_ns'
+    'body': 'add_action( "rdf_ns", ${1} )'
+  'action: refresh_blog_details':
+    'prefix': 'refresh_blog_details'
+    'body': 'add_action( "refresh_blog_details", ${1} )'
+  'action: register_form':
+    'prefix': 'register_form'
+    'body': 'add_action( "register_form", ${1} )'
+  'action: register_post':
+    'prefix': 'register_post'
+    'body': 'add_action( "register_post", ${1} )'
+  'action: register_sidebar':
+    'prefix': 'register_sidebar'
+    'body': 'add_action( "register_sidebar", ${1} )'
+  'action: registered_post_type':
+    'prefix': 'registered_post_type'
+    'body': 'add_action( "registered_post_type", ${1} )'
+  'action: registered_taxonomy':
+    'prefix': 'registered_taxonomy'
+    'body': 'add_action( "registered_taxonomy", ${1} )'
+  'action: remove_user_from_blog':
+    'prefix': 'remove_user_from_blog'
+    'body': 'add_action( "remove_user_from_blog", ${1} )'
+  'action: remove_user_role':
+    'prefix': 'remove_user_role'
+    'body': 'add_action( "remove_user_role", ${1} )'
+  'action: resetpass_form':
+    'prefix': 'resetpass_form'
+    'body': 'add_action( "resetpass_form", ${1} )'
+  'action: restrict_manage_comments':
+    'prefix': 'restrict_manage_comments'
+    'body': 'add_action( "restrict_manage_comments", ${1} )'
+  'action: restrict_manage_posts':
+    'prefix': 'restrict_manage_posts'
+    'body': 'add_action( "restrict_manage_posts", ${1} )'
+  'action: restrict_manage_users':
+    'prefix': 'restrict_manage_users'
+    'body': 'add_action( "restrict_manage_users", ${1} )'
+  'action: retreive_password':
+    'prefix': 'retreive_password'
+    'body': 'add_action( "retreive_password", ${1} )'
+  'action: retrieve_password':
+    'prefix': 'retrieve_password'
+    'body': 'add_action( "retrieve_password", ${1} )'
+  'action: retrieve_password_key':
+    'prefix': 'retrieve_password_key'
+    'body': 'add_action( "retrieve_password_key", ${1} )'
+  'action: revoke_super_admin':
+    'prefix': 'revoke_super_admin'
+    'body': 'add_action( "revoke_super_admin", ${1} )'
+  'action: revoked_super_admin':
+    'prefix': 'revoked_super_admin'
+    'body': 'add_action( "revoked_super_admin", ${1} )'
+  'action: rightnow_end':
+    'prefix': 'rightnow_end'
+    'body': 'add_action( "rightnow_end", ${1} )'
+  'action: rss2_comments_ns':
+    'prefix': 'rss2_comments_ns'
+    'body': 'add_action( "rss2_comments_ns", ${1} )'
+  'action: rss2_head':
+    'prefix': 'rss2_head'
+    'body': 'add_action( "rss2_head", ${1} )'
+  'action: rss2_item':
+    'prefix': 'rss2_item'
+    'body': 'add_action( "rss2_item", ${1} )'
+  'action: rss2_ns':
+    'prefix': 'rss2_ns'
+    'body': 'add_action( "rss2_ns", ${1} )'
+  'action: rss_head':
+    'prefix': 'rss_head'
+    'body': 'add_action( "rss_head", ${1} )'
+  'action: rss_item':
+    'prefix': 'rss_item'
+    'body': 'add_action( "rss_item", ${1} )'
+  'action: rss_tag_pre':
+    'prefix': 'rss_tag_pre'
+    'body': 'add_action( "rss_tag_pre", ${1} )'
+  'action: sanitize_comment_cookies':
+    'prefix': 'sanitize_comment_cookies'
+    'body': 'add_action( "sanitize_comment_cookies", ${1} )'
+  'action: save_post':
+    'prefix': 'save_post'
+    'body': 'add_action( "save_post", ${1} )'
+  'action: save_post_{$post->post_type}':
+    'prefix': 'save_post_{$post->post_type}'
+    'body': 'add_action( "save_post_{$post->post_type}", ${1} )'
+  'action: set_auth_cookie':
+    'prefix': 'set_auth_cookie'
+    'body': 'add_action( "set_auth_cookie", ${1} )'
+  'action: set_comment_cookies':
+    'prefix': 'set_comment_cookies'
+    'body': 'add_action( "set_comment_cookies", ${1} )'
+  'action: set_current_user':
+    'prefix': 'set_current_user'
+    'body': 'add_action( "set_current_user", ${1} )'
+  'action: set_logged_in_cookie':
+    'prefix': 'set_logged_in_cookie'
+    'body': 'add_action( "set_logged_in_cookie", ${1} )'
+  'action: set_object_terms':
+    'prefix': 'set_object_terms'
+    'body': 'add_action( "set_object_terms", ${1} )'
+  'action: set_site_transient_':
+    'prefix': 'set_site_transient_'
+    'body': 'add_action( "set_site_transient_", ${1} )'
+  'action: set_transient_':
+    'prefix': 'set_transient_'
+    'body': 'add_action( "set_transient_", ${1} )'
+  'action: set_user_role':
+    'prefix': 'set_user_role'
+    'body': 'add_action( "set_user_role", ${1} )'
+  'action: setted_site_transient':
+    'prefix': 'setted_site_transient'
+    'body': 'add_action( "setted_site_transient", ${1} )'
+  'action: setted_transient':
+    'prefix': 'setted_transient'
+    'body': 'add_action( "setted_transient", ${1} )'
+  'action: setup_theme':
+    'prefix': 'setup_theme'
+    'body': 'add_action( "setup_theme", ${1} )'
+  'action: show_user_profile':
+    'prefix': 'show_user_profile'
+    'body': 'add_action( "show_user_profile", ${1} )'
+  'action: shutdown':
+    'prefix': 'shutdown'
+    'body': 'add_action( "shutdown", ${1} )'
+  'action: sidebar_admin_page':
+    'prefix': 'sidebar_admin_page'
+    'body': 'add_action( "sidebar_admin_page", ${1} )'
+  'action: sidebar_admin_setup':
+    'prefix': 'sidebar_admin_setup'
+    'body': 'add_action( "sidebar_admin_setup", ${1} )'
+  'action: signup_blogform':
+    'prefix': 'signup_blogform'
+    'body': 'add_action( "signup_blogform", ${1} )'
+  'action: signup_extra_fields':
+    'prefix': 'signup_extra_fields'
+    'body': 'add_action( "signup_extra_fields", ${1} )'
+  'action: signup_finished':
+    'prefix': 'signup_finished'
+    'body': 'add_action( "signup_finished", ${1} )'
+  'action: signup_header':
+    'prefix': 'signup_header'
+    'body': 'add_action( "signup_header", ${1} )'
+  'action: signup_hidden_fields':
+    'prefix': 'signup_hidden_fields'
+    'body': 'add_action( "signup_hidden_fields", ${1} )'
+  'action: spam_comment':
+    'prefix': 'spam_comment'
+    'body': 'add_action( "spam_comment", ${1} )'
+  'action: spammed_comment':
+    'prefix': 'spammed_comment'
+    'body': 'add_action( "spammed_comment", ${1} )'
+  'action: split_shared_term':
+    'prefix': 'split_shared_term'
+    'body': 'add_action( "split_shared_term", ${1} )'
+  'action: start_previewing_theme':
+    'prefix': 'start_previewing_theme'
+    'body': 'add_action( "start_previewing_theme", ${1} )'
+  'action: stop_previewing_theme':
+    'prefix': 'stop_previewing_theme'
+    'body': 'add_action( "stop_previewing_theme", ${1} )'
+  'action: submitlink_box':
+    'prefix': 'submitlink_box'
+    'body': 'add_action( "submitlink_box", ${1} )'
+  'action: submitpage_box':
+    'prefix': 'submitpage_box'
+    'body': 'add_action( "submitpage_box", ${1} )'
+  'action: submitpost_box':
+    'prefix': 'submitpost_box'
+    'body': 'add_action( "submitpost_box", ${1} )'
+  'action: switch_blog':
+    'prefix': 'switch_blog'
+    'body': 'add_action( "switch_blog", ${1} )'
+  'action: switch_theme':
+    'prefix': 'switch_theme'
+    'body': 'add_action( "switch_theme", ${1} )'
+  'action: template_redirect':
+    'prefix': 'template_redirect'
+    'body': 'add_action( "template_redirect", ${1} )'
+  'action: the_widget':
+    'prefix': 'the_widget'
+    'body': 'add_action( "the_widget", ${1} )'
+  'action: tool_box':
+    'prefix': 'tool_box'
+    'body': 'add_action( "tool_box", ${1} )'
+  'action: trackback_post':
+    'prefix': 'trackback_post'
+    'body': 'add_action( "trackback_post", ${1} )'
+  'action: transition_comment_status':
+    'prefix': 'transition_comment_status'
+    'body': 'add_action( "transition_comment_status", ${1} )'
+  'action: transition_post_status':
+    'prefix': 'transition_post_status'
+    'body': 'add_action( "transition_post_status", ${1} )'
+  'action: trash_comment':
+    'prefix': 'trash_comment'
+    'body': 'add_action( "trash_comment", ${1} )'
+  'action: trash_post_comments':
+    'prefix': 'trash_post_comments'
+    'body': 'add_action( "trash_post_comments", ${1} )'
+  'action: trashed_comment':
+    'prefix': 'trashed_comment'
+    'body': 'add_action( "trashed_comment", ${1} )'
+  'action: trashed_post':
+    'prefix': 'trashed_post'
+    'body': 'add_action( "trashed_post", ${1} )'
+  'action: trashed_post_comments':
+    'prefix': 'trashed_post_comments'
+    'body': 'add_action( "trashed_post_comments", ${1} )'
+  'action: unarchive_blog':
+    'prefix': 'unarchive_blog'
+    'body': 'add_action( "unarchive_blog", ${1} )'
+  'action: uninstall_':
+    'prefix': 'uninstall_'
+    'body': 'add_action( "uninstall_", ${1} )'
+  'action: unload_textdomain':
+    'prefix': 'unload_textdomain'
+    'body': 'add_action( "unload_textdomain", ${1} )'
+  'action: unmature_blog':
+    'prefix': 'unmature_blog'
+    'body': 'add_action( "unmature_blog", ${1} )'
+  'action: unspam_comment':
+    'prefix': 'unspam_comment'
+    'body': 'add_action( "unspam_comment", ${1} )'
+  'action: unspammed_comment':
+    'prefix': 'unspammed_comment'
+    'body': 'add_action( "unspammed_comment", ${1} )'
+  'action: untrash_comment':
+    'prefix': 'untrash_comment'
+    'body': 'add_action( "untrash_comment", ${1} )'
+  'action: untrash_post':
+    'prefix': 'untrash_post'
+    'body': 'add_action( "untrash_post", ${1} )'
+  'action: untrash_post_comments':
+    'prefix': 'untrash_post_comments'
+    'body': 'add_action( "untrash_post_comments", ${1} )'
+  'action: untrashed_comment':
+    'prefix': 'untrashed_comment'
+    'body': 'add_action( "untrashed_comment", ${1} )'
+  'action: untrashed_post':
+    'prefix': 'untrashed_post'
+    'body': 'add_action( "untrashed_post", ${1} )'
+  'action: untrashed_post_comments':
+    'prefix': 'untrashed_post_comments'
+    'body': 'add_action( "untrashed_post_comments", ${1} )'
+  'action: update-core-custom_{$action}':
+    'prefix': 'update-core-custom_{$action}'
+    'body': 'add_action( "update-core-custom_{$action}", ${1} )'
+  'action: update-custom_{$action}':
+    'prefix': 'update-custom_{$action}'
+    'body': 'add_action( "update-custom_{$action}", ${1} )'
+  'action: update_blog_public':
+    'prefix': 'update_blog_public'
+    'body': 'add_action( "update_blog_public", ${1} )'
+  'action: update_option':
+    'prefix': 'update_option'
+    'body': 'add_action( "update_option", ${1} )'
+  'action: update_option_{$option}':
+    'prefix': 'update_option_{$option}'
+    'body': 'add_action( "update_option_{$option}", ${1} )'
+  'action: update_postmeta':
+    'prefix': 'update_postmeta'
+    'body': 'add_action( "update_postmeta", ${1} )'
+  'action: update_site_option':
+    'prefix': 'update_site_option'
+    'body': 'add_action( "update_site_option", ${1} )'
+  'action: update_site_option_{$option}':
+    'prefix': 'update_site_option_{$option}'
+    'body': 'add_action( "update_site_option_{$option}", ${1} )'
+  'action: update_usermeta':
+    'prefix': 'update_usermeta'
+    'body': 'add_action( "update_usermeta", ${1} )'
+  'action: update_wpmu_options':
+    'prefix': 'update_wpmu_options'
+    'body': 'add_action( "update_wpmu_options", ${1} )'
+  'action: update_{$meta_type}_meta':
+    'prefix': 'update_{$meta_type}_meta'
+    'body': 'add_action( "update_{$meta_type}_meta", ${1} )'
+  'action: updated_option':
+    'prefix': 'updated_option'
+    'body': 'add_action( "updated_option", ${1} )'
+  'action: updated_postmeta':
+    'prefix': 'updated_postmeta'
+    'body': 'add_action( "updated_postmeta", ${1} )'
+  'action: updated_usermeta':
+    'prefix': 'updated_usermeta'
+    'body': 'add_action( "updated_usermeta", ${1} )'
+  'action: updated_{$meta_type}_meta':
+    'prefix': 'updated_{$meta_type}_meta'
+    'body': 'add_action( "updated_{$meta_type}_meta", ${1} )'
+  'action: upgrader_process_complete':
+    'prefix': 'upgrader_process_complete'
+    'body': 'add_action( "upgrader_process_complete", ${1} )'
+  'action: upload_ui_over_quota':
+    'prefix': 'upload_ui_over_quota'
+    'body': 'add_action( "upload_ui_over_quota", ${1} )'
+  'action: user_admin_menu':
+    'prefix': 'user_admin_menu'
+    'body': 'add_action( "user_admin_menu", ${1} )'
+  'action: user_admin_notices':
+    'prefix': 'user_admin_notices'
+    'body': 'add_action( "user_admin_notices", ${1} )'
+  'action: user_edit_form_tag':
+    'prefix': 'user_edit_form_tag'
+    'body': 'add_action( "user_edit_form_tag", ${1} )'
+  'action: user_new_form':
+    'prefix': 'user_new_form'
+    'body': 'add_action( "user_new_form", ${1} )'
+  'action: user_new_form_tag':
+    'prefix': 'user_new_form_tag'
+    'body': 'add_action( "user_new_form_tag", ${1} )'
+  'action: user_register':
+    'prefix': 'user_register'
+    'body': 'add_action( "user_register", ${1} )'
+  'action: validate_password_reset':
+    'prefix': 'validate_password_reset'
+    'body': 'add_action( "validate_password_reset", ${1} )'
+  'action: welcome_panel':
+    'prefix': 'welcome_panel'
+    'body': 'add_action( "welcome_panel", ${1} )'
+  'action: widgets.php':
+    'prefix': 'widgets.php'
+    'body': 'add_action( "widgets.php", ${1} )'
+  'action: widgets_admin_page':
+    'prefix': 'widgets_admin_page'
+    'body': 'add_action( "widgets_admin_page", ${1} )'
+  'action: widgets_init':
+    'prefix': 'widgets_init'
+    'body': 'add_action( "widgets_init", ${1} )'
+  'action: wp-mail.php':
+    'prefix': 'wp-mail.php'
+    'body': 'add_action( "wp-mail.php", ${1} )'
+  'action: wp_after_admin_bar_render':
+    'prefix': 'wp_after_admin_bar_render'
+    'body': 'add_action( "wp_after_admin_bar_render", ${1} )'
+  'action: wp_ajax_':
+    'prefix': 'wp_ajax_'
+    'body': 'add_action( "wp_ajax_", ${1} )'
+  'action: wp_ajax_crop_image_pre_save':
+    'prefix': 'wp_ajax_crop_image_pre_save'
+    'body': 'add_action( "wp_ajax_crop_image_pre_save", ${1} )'
+  'action: wp_ajax_nopriv_':
+    'prefix': 'wp_ajax_nopriv_'
+    'body': 'add_action( "wp_ajax_nopriv_", ${1} )'
+  'action: wp_before_admin_bar_render':
+    'prefix': 'wp_before_admin_bar_render'
+    'body': 'add_action( "wp_before_admin_bar_render", ${1} )'
+  'action: wp_blacklist_check':
+    'prefix': 'wp_blacklist_check'
+    'body': 'add_action( "wp_blacklist_check", ${1} )'
+  'action: wp_create_file_in_uploads':
+    'prefix': 'wp_create_file_in_uploads'
+    'body': 'add_action( "wp_create_file_in_uploads", ${1} )'
+  'action: wp_create_nav_menu':
+    'prefix': 'wp_create_nav_menu'
+    'body': 'add_action( "wp_create_nav_menu", ${1} )'
+  'action: wp_creating_autosave':
+    'prefix': 'wp_creating_autosave'
+    'body': 'add_action( "wp_creating_autosave", ${1} )'
+  'action: wp_dashboard_setup':
+    'prefix': 'wp_dashboard_setup'
+    'body': 'add_action( "wp_dashboard_setup", ${1} )'
+  'action: wp_delete_nav_menu':
+    'prefix': 'wp_delete_nav_menu'
+    'body': 'add_action( "wp_delete_nav_menu", ${1} )'
+  'action: wp_delete_post_revision':
+    'prefix': 'wp_delete_post_revision'
+    'body': 'add_action( "wp_delete_post_revision", ${1} )'
+  'action: wp_enqueue_editor':
+    'prefix': 'wp_enqueue_editor'
+    'body': 'add_action( "wp_enqueue_editor", ${1} )'
+  'action: wp_enqueue_media':
+    'prefix': 'wp_enqueue_media'
+    'body': 'add_action( "wp_enqueue_media", ${1} )'
+  'action: wp_enqueue_scripts':
+    'prefix': 'wp_enqueue_scripts'
+    'body': 'add_action( "wp_enqueue_scripts", ${1} )'
+  'action: wp_footer':
+    'prefix': 'wp_footer'
+    'body': 'add_action( "wp_footer", ${1} )'
+  'action: wp_head':
+    'prefix': 'wp_head'
+    'body': 'add_action( "wp_head", ${1} )'
+  'action: wp_insert_comment':
+    'prefix': 'wp_insert_comment'
+    'body': 'add_action( "wp_insert_comment", ${1} )'
+  'action: wp_insert_post':
+    'prefix': 'wp_insert_post'
+    'body': 'add_action( "wp_insert_post", ${1} )'
+  'action: wp_install':
+    'prefix': 'wp_install'
+    'body': 'add_action( "wp_install", ${1} )'
+  'action: wp_loaded':
+    'prefix': 'wp_loaded'
+    'body': 'add_action( "wp_loaded", ${1} )'
+  'action: wp_login':
+    'prefix': 'wp_login'
+    'body': 'add_action( "wp_login", ${1} )'
+  'action: wp_login_failed':
+    'prefix': 'wp_login_failed'
+    'body': 'add_action( "wp_login_failed", ${1} )'
+  'action: wp_logout':
+    'prefix': 'wp_logout'
+    'body': 'add_action( "wp_logout", ${1} )'
+  'action: wp_maybe_auto_update':
+    'prefix': 'wp_maybe_auto_update'
+    'body': 'add_action( "wp_maybe_auto_update", ${1} )'
+  'action: wp_meta':
+    'prefix': 'wp_meta'
+    'body': 'add_action( "wp_meta", ${1} )'
+  'action: wp_network_dashboard_setup':
+    'prefix': 'wp_network_dashboard_setup'
+    'body': 'add_action( "wp_network_dashboard_setup", ${1} )'
+  'action: wp_playlist_scripts':
+    'prefix': 'wp_playlist_scripts'
+    'body': 'add_action( "wp_playlist_scripts", ${1} )'
+  'action: wp_print_footer_scripts':
+    'prefix': 'wp_print_footer_scripts'
+    'body': 'add_action( "wp_print_footer_scripts", ${1} )'
+  'action: wp_print_scripts':
+    'prefix': 'wp_print_scripts'
+    'body': 'add_action( "wp_print_scripts", ${1} )'
+  'action: wp_print_styles':
+    'prefix': 'wp_print_styles'
+    'body': 'add_action( "wp_print_styles", ${1} )'
+  'action: wp_register_sidebar_widget':
+    'prefix': 'wp_register_sidebar_widget'
+    'body': 'add_action( "wp_register_sidebar_widget", ${1} )'
+  'action: wp_restore_post_revision':
+    'prefix': 'wp_restore_post_revision'
+    'body': 'add_action( "wp_restore_post_revision", ${1} )'
+  'action: wp_set_comment_status':
+    'prefix': 'wp_set_comment_status'
+    'body': 'add_action( "wp_set_comment_status", ${1} )'
+  'action: wp_tiny_mce_init':
+    'prefix': 'wp_tiny_mce_init'
+    'body': 'add_action( "wp_tiny_mce_init", ${1} )'
+  'action: wp_trash_post':
+    'prefix': 'wp_trash_post'
+    'body': 'add_action( "wp_trash_post", ${1} )'
+  'action: wp_unregister_sidebar_widget':
+    'prefix': 'wp_unregister_sidebar_widget'
+    'body': 'add_action( "wp_unregister_sidebar_widget", ${1} )'
+  'action: wp_update_comment_count':
+    'prefix': 'wp_update_comment_count'
+    'body': 'add_action( "wp_update_comment_count", ${1} )'
+  'action: wp_update_nav_menu':
+    'prefix': 'wp_update_nav_menu'
+    'body': 'add_action( "wp_update_nav_menu", ${1} )'
+  'action: wp_update_nav_menu_item':
+    'prefix': 'wp_update_nav_menu_item'
+    'body': 'add_action( "wp_update_nav_menu_item", ${1} )'
+  'action: wp_upgrade':
+    'prefix': 'wp_upgrade'
+    'body': 'add_action( "wp_upgrade", ${1} )'
+  'action: wp_user_dashboard_setup':
+    'prefix': 'wp_user_dashboard_setup'
+    'body': 'add_action( "wp_user_dashboard_setup", ${1} )'
+  'action: wpmu_activate_blog':
+    'prefix': 'wpmu_activate_blog'
+    'body': 'add_action( "wpmu_activate_blog", ${1} )'
+  'action: wpmu_activate_user':
+    'prefix': 'wpmu_activate_user'
+    'body': 'add_action( "wpmu_activate_user", ${1} )'
+  'action: wpmu_blog_updated':
+    'prefix': 'wpmu_blog_updated'
+    'body': 'add_action( "wpmu_blog_updated", ${1} )'
+  'action: wpmu_delete_user':
+    'prefix': 'wpmu_delete_user'
+    'body': 'add_action( "wpmu_delete_user", ${1} )'
+  'action: wpmu_new_blog':
+    'prefix': 'wpmu_new_blog'
+    'body': 'add_action( "wpmu_new_blog", ${1} )'
+  'action: wpmu_new_user':
+    'prefix': 'wpmu_new_user'
+    'body': 'add_action( "wpmu_new_user", ${1} )'
+  'action: wpmu_options':
+    'prefix': 'wpmu_options'
+    'body': 'add_action( "wpmu_options", ${1} )'
+  'action: wpmu_update_blog_options':
+    'prefix': 'wpmu_update_blog_options'
+    'body': 'add_action( "wpmu_update_blog_options", ${1} )'
+  'action: wpmu_upgrade_page':
+    'prefix': 'wpmu_upgrade_page'
+    'body': 'add_action( "wpmu_upgrade_page", ${1} )'
+  'action: wpmu_upgrade_site':
+    'prefix': 'wpmu_upgrade_site'
+    'body': 'add_action( "wpmu_upgrade_site", ${1} )'
+  'action: wpmuadminedit':
+    'prefix': 'wpmuadminedit'
+    'body': 'add_action( "wpmuadminedit", ${1} )'
+  'action: wpmuadminresult':
+    'prefix': 'wpmuadminresult'
+    'body': 'add_action( "wpmuadminresult", ${1} )'
+  'action: wpmublogsaction':
+    'prefix': 'wpmublogsaction'
+    'body': 'add_action( "wpmublogsaction", ${1} )'
+  'action: wpmueditblogaction':
+    'prefix': 'wpmueditblogaction'
+    'body': 'add_action( "wpmueditblogaction", ${1} )'
+  'action: xmlrpc_call':
+    'prefix': 'xmlrpc_call'
+    'body': 'add_action( "xmlrpc_call", ${1} )'
+  'action: xmlrpc_call_success_blogger_deletePost':
+    'prefix': 'xmlrpc_call_success_blogger_deletePost'
+    'body': 'add_action( "xmlrpc_call_success_blogger_deletePost", ${1} )'
+  'action: xmlrpc_call_success_blogger_editPost':
+    'prefix': 'xmlrpc_call_success_blogger_editPost'
+    'body': 'add_action( "xmlrpc_call_success_blogger_editPost", ${1} )'
+  'action: xmlrpc_call_success_blogger_newPost':
+    'prefix': 'xmlrpc_call_success_blogger_newPost'
+    'body': 'add_action( "xmlrpc_call_success_blogger_newPost", ${1} )'
+  'action: xmlrpc_call_success_mw_editPost':
+    'prefix': 'xmlrpc_call_success_mw_editPost'
+    'body': 'add_action( "xmlrpc_call_success_mw_editPost", ${1} )'
+  'action: xmlrpc_call_success_mw_newMediaObject':
+    'prefix': 'xmlrpc_call_success_mw_newMediaObject'
+    'body': 'add_action( "xmlrpc_call_success_mw_newMediaObject", ${1} )'
+  'action: xmlrpc_call_success_mw_newPost':
+    'prefix': 'xmlrpc_call_success_mw_newPost'
+    'body': 'add_action( "xmlrpc_call_success_mw_newPost", ${1} )'
+  'action: xmlrpc_call_success_wp_deleteCategory':
+    'prefix': 'xmlrpc_call_success_wp_deleteCategory'
+    'body': 'add_action( "xmlrpc_call_success_wp_deleteCategory", ${1} )'
+  'action: xmlrpc_call_success_wp_deleteComment':
+    'prefix': 'xmlrpc_call_success_wp_deleteComment'
+    'body': 'add_action( "xmlrpc_call_success_wp_deleteComment", ${1} )'
+  'action: xmlrpc_call_success_wp_deletePage':
+    'prefix': 'xmlrpc_call_success_wp_deletePage'
+    'body': 'add_action( "xmlrpc_call_success_wp_deletePage", ${1} )'
+  'action: xmlrpc_call_success_wp_editComment':
+    'prefix': 'xmlrpc_call_success_wp_editComment'
+    'body': 'add_action( "xmlrpc_call_success_wp_editComment", ${1} )'
+  'action: xmlrpc_call_success_wp_newCategory':
+    'prefix': 'xmlrpc_call_success_wp_newCategory'
+    'body': 'add_action( "xmlrpc_call_success_wp_newCategory", ${1} )'
+  'action: xmlrpc_call_success_wp_newComment':
+    'prefix': 'xmlrpc_call_success_wp_newComment'
+    'body': 'add_action( "xmlrpc_call_success_wp_newComment", ${1} )'
+  'action: xmlrpc_publish_post':
+    'prefix': 'xmlrpc_publish_post'
+    'body': 'add_action( "xmlrpc_publish_post", ${1} )'
+  'action: xmlrpc_rsd_apis':
+    'prefix': 'xmlrpc_rsd_apis'
+    'body': 'add_action( "xmlrpc_rsd_apis", ${1} )'
+  'action: {$new_status}_{$post->post_type}':
+    'prefix': '{$new_status}_{$post->post_type}'
+    'body': 'add_action( "{$new_status}_{$post->post_type}", ${1} )'
+  'action: {$old_status}_to_{$new_status}':
+    'prefix': '{$old_status}_to_{$new_status}'
+    'body': 'add_action( "{$old_status}_to_{$new_status}", ${1} )'
+  'action: {$taxonomy}_add_form':
+    'prefix': '{$taxonomy}_add_form'
+    'body': 'add_action( "{$taxonomy}_add_form", ${1} )'
+  'action: {$taxonomy}_add_form_fields':
+    'prefix': '{$taxonomy}_add_form_fields'
+    'body': 'add_action( "{$taxonomy}_add_form_fields", ${1} )'
+  'action: {$taxonomy}_edit_form':
+    'prefix': '{$taxonomy}_edit_form'
+    'body': 'add_action( "{$taxonomy}_edit_form", ${1} )'
+  'action: {$taxonomy}_edit_form_fields':
+    'prefix': '{$taxonomy}_edit_form_fields'
+    'body': 'add_action( "{$taxonomy}_edit_form_fields", ${1} )'
+  'action: {$taxonomy}_pre_add_form':
+    'prefix': '{$taxonomy}_pre_add_form'
+    'body': 'add_action( "{$taxonomy}_pre_add_form", ${1} )'
+  'action: {$taxonomy}_pre_edit_form':
+    'prefix': '{$taxonomy}_pre_edit_form'
+    'body': 'add_action( "{$taxonomy}_pre_edit_form", ${1} )'
+  'action: {$taxonomy}_term_edit_form_tag':
+    'prefix': '{$taxonomy}_term_edit_form_tag'
+    'body': 'add_action( "{$taxonomy}_term_edit_form_tag", ${1} )'
+  'action: {$taxonomy}_term_new_form_tag':
+    'prefix': '{$taxonomy}_term_new_form_tag'
+    'body': 'add_action( "{$taxonomy}_term_new_form_tag", ${1} )'
