@@ -1,0 +1,4 @@
+".text.html":
+	"admin_menu":
+		"prefix": "admin_menu"
+		"body": "add_action( \"admin_menu\", ${1:\\$callback} )"

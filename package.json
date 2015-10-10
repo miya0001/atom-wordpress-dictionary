@@ -1,0 +1,23 @@
+{
+  "name": "atom-wordpress-dictionary",
+  "version": "0.1.0",
+  "description": "A short description of your package",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "repository": "https://github.com/miya0001/atom-wordpress-dictionary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/language-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miya0001/atom-wordpress-dictionary/issues"
+    },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
