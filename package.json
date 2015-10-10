@@ -1,7 +1,7 @@
 {
   "name": "atom-wordpress-dictionary",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "Snippets of all WordPress functions, filter hooks and action hooks",
   "engines": {
     "atom": "*",
     "node": "*"
@@ -9,7 +9,7 @@
   "repository": "https://github.com/miya0001/atom-wordpress-dictionary",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yosuke-furukawa/language-jsx.git"
+    "url": "https://github.com/miya0001/atom-wordpress-dictionary.git#stable"
   },
   "bugs": {
     "url": "https://github.com/miya0001/atom-wordpress-dictionary/issues"
