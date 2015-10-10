@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/miya0001/atom-wordpress-dictionary.git#stable"
+    "url": "https://github.com/miya0001/atom-wordpress-dictionary.git"
   },
   "bugs": {
     "url": "https://github.com/miya0001/atom-wordpress-dictionary/issues"
