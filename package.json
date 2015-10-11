@@ -16,6 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
+    "sprintf-js": "*",
     "vim-dict-wordpress": "https://github.com/miya0001/vim-dict-wordpress.git"
   }
 }

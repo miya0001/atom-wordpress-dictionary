@@ -1,9 +1,10 @@
 'use strict';
 
-var gulp = require("gulp");
-var fs = require('fs');
+var gulp = require( "gulp" );
+var fs = require( "fs" );
+var sprintf = require("sprintf-js").sprintf;
 
-gulp.task('functions', function() {
+gulp.task( 'functions', function() {
     var src = './node_modules/vim-dict-wordpress/functions.dict';
     var out = './snippets/functions.cson';
     var snippets = "'.source.php':\n"
@@ -22,7 +23,7 @@ gulp.task('functions', function() {
     } );
 } );
 
-gulp.task('filters', function() {
+gulp.task( 'filters', function() {
     var src = './node_modules/vim-dict-wordpress/filter-hooks.dict';
     var out = './snippets/filters.cson';
     var snippets = "'.source.php':\n"
@@ -33,15 +34,15 @@ gulp.task('filters', function() {
             if ( ! snippet.length ) {
                 continue;
             }
-            snippets = snippets + "  " + "'filter: " + snippet + "':\n";
-            snippets = snippets + "    " + "'prefix': '" + snippet + "'\n";
-            snippets = snippets + "    " + "'body': 'add_filter( \"" + snippet + "\", ${1} )'\n";
+            snippets += sprintf( "  'filter: %s':\n", snippet );
+            snippets += sprintf( "    'prefix': '%s'\n", snippet );
+            snippets += sprintf( "    'body': 'add_filter( \"%1$s\", ${1:array( $this, \"%1$s\" )} );'\n", snippet );
         }
         fs.writeFile( out, snippets );
     } );
 } );
 
-gulp.task('actions', function() {
+gulp.task( 'actions', function() {
     var src = './node_modules/vim-dict-wordpress/action-hooks.dict';
     var out = './snippets/actions.cson';
     var snippets = "'.source.php':\n"
@@ -52,9 +53,9 @@ gulp.task('actions', function() {
             if ( ! snippet.length ) {
                 continue;
             }
-            snippets = snippets + "  " + "'action: " + snippet + "':\n";
-            snippets = snippets + "    " + "'prefix': '" + snippet + "'\n";
-            snippets = snippets + "    " + "'body': 'add_action( \"" + snippet + "\", ${1} )'\n";
+            snippets += sprintf( "  'action: %s':\n", snippet );
+            snippets += sprintf( "    'prefix': '%s'\n", snippet );
+            snippets += sprintf( "    'body': 'add_action( \"%1$s\", ${1:array( $this, \"%1$s\" )} );'\n", snippet );
         }
         fs.writeFile( out, snippets );
     } );
