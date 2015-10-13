@@ -13,8 +13,9 @@ apm install wordpress-dictionary
 ```
 Alternatively go to `Atom > Preferences > Packages` and search for `wordpress-dictionary`.
 
-See also:
+## Related
 
+* https://atom.io/packages/wordpress-dictionary
 * https://github.com/miya0001/atom-wordpress-dictionary
 * https://github.com/miya0001/vim-dict-wordpress
 
