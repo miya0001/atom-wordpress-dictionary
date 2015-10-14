@@ -15,8 +15,9 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "cson": "^3.0.2",
     "gulp": "^3.9.0",
-    "sprintf-js": "*",
+    "sprintf-js": "^1.0.3",
     "vim-dict-wordpress": "https://github.com/miya0001/vim-dict-wordpress.git"
   }
 }
