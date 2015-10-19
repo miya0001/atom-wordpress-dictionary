@@ -40,7 +40,7 @@ gulp.task( 'filters', function() {
             if ( ! snippet.length ) {
                 continue;
             }
-            snippets['.source.php']['filter: ' + snippet + '()'] = {
+            snippets['.source.php']['filter: ' + snippet] = {
                 'prefix': snippet,
                 'body': sprintf( 'add_filter( "%1$s", ${1:array( $this, "%1$s" )} );', snippet ),
             }
@@ -63,7 +63,7 @@ gulp.task( 'actions', function() {
             if ( ! snippet.length ) {
                 continue;
             }
-            snippets['.source.php']['action: ' + snippet + '()'] = {
+            snippets['.source.php']['action: ' + snippet] = {
                 'prefix': snippet,
                 'body': sprintf( 'add_action( "%1$s", ${1:array( $this, "%1$s" )} );', snippet ),
             }
