@@ -74,9 +74,9 @@
 	"action: add_site_option":
 		prefix: "add_site_option"
 		body: "add_action( \"add_site_option\", ${1:array( $this, \"add_site_option\" )} );"
-	"action: add_site_option_{$option}":
-		prefix: "add_site_option_{$option}"
-		body: "add_action( \"add_site_option_{$option}\", ${1:array( $this, \"add_site_option_{$option}\" )} );"
+	"action: add_site_option_":
+		prefix: "add_site_option_"
+		body: "add_action( \"add_site_option_\", ${1:array( $this, \"add_site_option_\" )} );"
 	"action: add_tag_form":
 		prefix: "add_tag_form"
 		body: "add_action( \"add_tag_form\", ${1:array( $this, \"add_tag_form\" )} );"
@@ -230,6 +230,9 @@
 	"action: after_mu_upgrade":
 		prefix: "after_mu_upgrade"
 		body: "add_action( \"after_mu_upgrade\", ${1:array( $this, \"after_mu_upgrade\" )} );"
+	"action: after_password_reset":
+		prefix: "after_password_reset"
+		body: "add_action( \"after_password_reset\", ${1:array( $this, \"after_password_reset\" )} );"
 	"action: after_plugin_row":
 		prefix: "after_plugin_row"
 		body: "add_action( \"after_plugin_row\", ${1:array( $this, \"after_plugin_row\" )} );"
@@ -242,6 +245,12 @@
 	"action: after_signup_form":
 		prefix: "after_signup_form"
 		body: "add_action( \"after_signup_form\", ${1:array( $this, \"after_signup_form\" )} );"
+	"action: after_signup_site":
+		prefix: "after_signup_site"
+		body: "add_action( \"after_signup_site\", ${1:array( $this, \"after_signup_site\" )} );"
+	"action: after_signup_user":
+		prefix: "after_signup_user"
+		body: "add_action( \"after_signup_user\", ${1:array( $this, \"after_signup_user\" )} );"
 	"action: after_switch_theme":
 		prefix: "after_switch_theme"
 		body: "add_action( \"after_switch_theme\", ${1:array( $this, \"after_switch_theme\" )} );"
@@ -278,6 +287,9 @@
 	"action: attachment_submitbox_misc_actions":
 		prefix: "attachment_submitbox_misc_actions"
 		body: "add_action( \"attachment_submitbox_misc_actions\", ${1:array( $this, \"attachment_submitbox_misc_actions\" )} );"
+	"action: attachment_updated":
+		prefix: "attachment_updated"
+		body: "add_action( \"attachment_updated\", ${1:array( $this, \"attachment_updated\" )} );"
 	"action: auth_cookie_bad_hash":
 		prefix: "auth_cookie_bad_hash"
 		body: "add_action( \"auth_cookie_bad_hash\", ${1:array( $this, \"auth_cookie_bad_hash\" )} );"
@@ -308,6 +320,9 @@
 	"action: before_signup_form":
 		prefix: "before_signup_form"
 		body: "add_action( \"before_signup_form\", ${1:array( $this, \"before_signup_form\" )} );"
+	"action: before_signup_header":
+		prefix: "before_signup_header"
+		body: "add_action( \"before_signup_header\", ${1:array( $this, \"before_signup_header\" )} );"
 	"action: before_wp_tiny_mce":
 		prefix: "before_wp_tiny_mce"
 		body: "add_action( \"before_wp_tiny_mce\", ${1:array( $this, \"before_wp_tiny_mce\" )} );"
@@ -341,6 +356,9 @@
 	"action: clean_term_cache":
 		prefix: "clean_term_cache"
 		body: "add_action( \"clean_term_cache\", ${1:array( $this, \"clean_term_cache\" )} );"
+	"action: clean_user_cache":
+		prefix: "clean_user_cache"
+		body: "add_action( \"clean_user_cache\", ${1:array( $this, \"clean_user_cache\" )} );"
 	"action: clear_auth_cookie":
 		prefix: "clear_auth_cookie"
 		body: "add_action( \"clear_auth_cookie\", ${1:array( $this, \"clear_auth_cookie\" )} );"
@@ -452,6 +470,12 @@
 	"action: customize_controls_print_styles":
 		prefix: "customize_controls_print_styles"
 		body: "add_action( \"customize_controls_print_styles\", ${1:array( $this, \"customize_controls_print_styles\" )} );"
+	"action: customize_post_value_set":
+		prefix: "customize_post_value_set"
+		body: "add_action( \"customize_post_value_set\", ${1:array( $this, \"customize_post_value_set\" )} );"
+	"action: customize_post_value_set_{$setting_id}":
+		prefix: "customize_post_value_set_{$setting_id}"
+		body: "add_action( \"customize_post_value_set_{$setting_id}\", ${1:array( $this, \"customize_post_value_set_{$setting_id}\" )} );"
 	"action: customize_preview_init":
 		prefix: "customize_preview_init"
 		body: "add_action( \"customize_preview_init\", ${1:array( $this, \"customize_preview_init\" )} );"
@@ -491,9 +515,9 @@
 	"action: customize_save_after":
 		prefix: "customize_save_after"
 		body: "add_action( \"customize_save_after\", ${1:array( $this, \"customize_save_after\" )} );"
-	"action: customize_update_":
-		prefix: "customize_update_"
-		body: "add_action( \"customize_update_\", ${1:array( $this, \"customize_update_\" )} );"
+	"action: customize_update_{$this->type}":
+		prefix: "customize_update_{$this->type}"
+		body: "add_action( \"customize_update_{$this->type}\", ${1:array( $this, \"customize_update_{$this->type}\" )} );"
 	"action: dbx_post_advanced":
 		prefix: "dbx_post_advanced"
 		body: "add_action( \"dbx_post_advanced\", ${1:array( $this, \"dbx_post_advanced\" )} );"
@@ -533,6 +557,9 @@
 	"action: delete_option_$option":
 		prefix: "delete_option_$option"
 		body: "add_action( \"delete_option_$option\", ${1:array( $this, \"delete_option_$option\" )} );"
+	"action: delete_plugin":
+		prefix: "delete_plugin"
+		body: "add_action( \"delete_plugin\", ${1:array( $this, \"delete_plugin\" )} );"
 	"action: delete_post":
 		prefix: "delete_post"
 		body: "add_action( \"delete_post\", ${1:array( $this, \"delete_post\" )} );"
@@ -542,9 +569,9 @@
 	"action: delete_site_option":
 		prefix: "delete_site_option"
 		body: "add_action( \"delete_site_option\", ${1:array( $this, \"delete_site_option\" )} );"
-	"action: delete_site_option_{$option}":
-		prefix: "delete_site_option_{$option}"
-		body: "add_action( \"delete_site_option_{$option}\", ${1:array( $this, \"delete_site_option_{$option}\" )} );"
+	"action: delete_site_option_":
+		prefix: "delete_site_option_"
+		body: "add_action( \"delete_site_option_\", ${1:array( $this, \"delete_site_option_\" )} );"
 	"action: delete_site_transient_":
 		prefix: "delete_site_transient_"
 		body: "add_action( \"delete_site_transient_\", ${1:array( $this, \"delete_site_transient_\" )} );"
@@ -569,6 +596,9 @@
 	"action: delete_usermeta":
 		prefix: "delete_usermeta"
 		body: "add_action( \"delete_usermeta\", ${1:array( $this, \"delete_usermeta\" )} );"
+	"action: delete_widget":
+		prefix: "delete_widget"
+		body: "add_action( \"delete_widget\", ${1:array( $this, \"delete_widget\" )} );"
 	"action: delete_{$meta_type}_meta":
 		prefix: "delete_{$meta_type}_meta"
 		body: "add_action( \"delete_{$meta_type}_meta\", ${1:array( $this, \"delete_{$meta_type}_meta\" )} );"
@@ -584,6 +614,9 @@
 	"action: deleted_option":
 		prefix: "deleted_option"
 		body: "add_action( \"deleted_option\", ${1:array( $this, \"deleted_option\" )} );"
+	"action: deleted_plugin":
+		prefix: "deleted_plugin"
+		body: "add_action( \"deleted_plugin\", ${1:array( $this, \"deleted_plugin\" )} );"
 	"action: deleted_post":
 		prefix: "deleted_post"
 		body: "add_action( \"deleted_post\", ${1:array( $this, \"deleted_post\" )} );"
@@ -632,6 +665,9 @@
 	"action: do_actionbelow":
 		prefix: "do_actionbelow"
 		body: "add_action( \"do_actionbelow\", ${1:array( $this, \"do_actionbelow\" )} );"
+	"action: do_feed_{$feed}":
+		prefix: "do_feed_{$feed}"
+		body: "add_action( \"do_feed_{$feed}\", ${1:array( $this, \"do_feed_{$feed}\" )} );"
 	"action: do_meta_boxes":
 		prefix: "do_meta_boxes"
 		body: "add_action( \"do_meta_boxes\", ${1:array( $this, \"do_meta_boxes\" )} );"
@@ -725,6 +761,9 @@
 	"action: edit_terms":
 		prefix: "edit_terms"
 		body: "add_action( \"edit_terms\", ${1:array( $this, \"edit_terms\" )} );"
+	"action: edit_user_created_user":
+		prefix: "edit_user_created_user"
+		body: "add_action( \"edit_user_created_user\", ${1:array( $this, \"edit_user_created_user\" )} );"
 	"action: edit_user_profile":
 		prefix: "edit_user_profile"
 		body: "add_action( \"edit_user_profile\", ${1:array( $this, \"edit_user_profile\" )} );"
@@ -746,9 +785,24 @@
 	"action: edited_terms":
 		prefix: "edited_terms"
 		body: "add_action( \"edited_terms\", ${1:array( $this, \"edited_terms\" )} );"
+	"action: embed_content":
+		prefix: "embed_content"
+		body: "add_action( \"embed_content\", ${1:array( $this, \"embed_content\" )} );"
+	"action: embed_content_meta":
+		prefix: "embed_content_meta"
+		body: "add_action( \"embed_content_meta\", ${1:array( $this, \"embed_content_meta\" )} );"
+	"action: embed_footer":
+		prefix: "embed_footer"
+		body: "add_action( \"embed_footer\", ${1:array( $this, \"embed_footer\" )} );"
+	"action: embed_head":
+		prefix: "embed_head"
+		body: "add_action( \"embed_head\", ${1:array( $this, \"embed_head\" )} );"
 	"action: end_fetch_post_thumbnail_html":
 		prefix: "end_fetch_post_thumbnail_html"
 		body: "add_action( \"end_fetch_post_thumbnail_html\", ${1:array( $this, \"end_fetch_post_thumbnail_html\" )} );"
+	"action: enqueue_embed_scripts":
+		prefix: "enqueue_embed_scripts"
+		body: "add_action( \"enqueue_embed_scripts\", ${1:array( $this, \"enqueue_embed_scripts\" )} );"
 	"action: export_filters":
 		prefix: "export_filters"
 		body: "add_action( \"export_filters\", ${1:array( $this, \"export_filters\" )} );"
@@ -815,6 +869,9 @@
 	"action: install_themes_{$tab}":
 		prefix: "install_themes_{$tab}"
 		body: "add_action( \"install_themes_{$tab}\", ${1:array( $this, \"install_themes_{$tab}\" )} );"
+	"action: invite_user":
+		prefix: "invite_user"
+		body: "add_action( \"invite_user\", ${1:array( $this, \"invite_user\" )} );"
 	"action: load-":
 		prefix: "load-"
 		body: "add_action( \"load-\", ${1:array( $this, \"load-\" )} );"
@@ -908,6 +965,9 @@
 	"action: manage_posts_custom_column":
 		prefix: "manage_posts_custom_column"
 		body: "add_action( \"manage_posts_custom_column\", ${1:array( $this, \"manage_posts_custom_column\" )} );"
+	"action: manage_posts_extra_tablenav":
+		prefix: "manage_posts_extra_tablenav"
+		body: "add_action( \"manage_posts_extra_tablenav\", ${1:array( $this, \"manage_posts_extra_tablenav\" )} );"
 	"action: manage_sites_custom_column":
 		prefix: "manage_sites_custom_column"
 		body: "add_action( \"manage_sites_custom_column\", ${1:array( $this, \"manage_sites_custom_column\" )} );"
@@ -929,6 +989,9 @@
 	"action: media_upload_$type":
 		prefix: "media_upload_$type"
 		body: "add_action( \"media_upload_$type\", ${1:array( $this, \"media_upload_$type\" )} );"
+	"action: ms_network_not_found":
+		prefix: "ms_network_not_found"
+		body: "add_action( \"ms_network_not_found\", ${1:array( $this, \"ms_network_not_found\" )} );"
 	"action: ms_site_not_found":
 		prefix: "ms_site_not_found"
 		body: "add_action( \"ms_site_not_found\", ${1:array( $this, \"ms_site_not_found\" )} );"
@@ -953,12 +1016,24 @@
 	"action: network_admin_notices":
 		prefix: "network_admin_notices"
 		body: "add_action( \"network_admin_notices\", ${1:array( $this, \"network_admin_notices\" )} );"
+	"action: network_site_new_created_user":
+		prefix: "network_site_new_created_user"
+		body: "add_action( \"network_site_new_created_user\", ${1:array( $this, \"network_site_new_created_user\" )} );"
 	"action: network_site_users_after_list_table":
 		prefix: "network_site_users_after_list_table"
 		body: "add_action( \"network_site_users_after_list_table\", ${1:array( $this, \"network_site_users_after_list_table\" )} );"
+	"action: network_site_users_created_user":
+		prefix: "network_site_users_created_user"
+		body: "add_action( \"network_site_users_created_user\", ${1:array( $this, \"network_site_users_created_user\" )} );"
+	"action: network_user_new_created_user":
+		prefix: "network_user_new_created_user"
+		body: "add_action( \"network_user_new_created_user\", ${1:array( $this, \"network_user_new_created_user\" )} );"
 	"action: opml_head":
 		prefix: "opml_head"
 		body: "add_action( \"opml_head\", ${1:array( $this, \"opml_head\" )} );"
+	"action: page_attributes_meta_box_template":
+		prefix: "page_attributes_meta_box_template"
+		body: "add_action( \"page_attributes_meta_box_template\", ${1:array( $this, \"page_attributes_meta_box_template\" )} );"
 	"action: parse_tax_query":
 		prefix: "parse_tax_query"
 		body: "add_action( \"parse_tax_query\", ${1:array( $this, \"parse_tax_query\" )} );"
@@ -1004,6 +1079,9 @@
 	"action: post_locked_dialog":
 		prefix: "post_locked_dialog"
 		body: "add_action( \"post_locked_dialog\", ${1:array( $this, \"post_locked_dialog\" )} );"
+	"action: post_submitbox_minor_actions":
+		prefix: "post_submitbox_minor_actions"
+		body: "add_action( \"post_submitbox_minor_actions\", ${1:array( $this, \"post_submitbox_minor_actions\" )} );"
 	"action: post_submitbox_misc_actions":
 		prefix: "post_submitbox_misc_actions"
 		body: "add_action( \"post_submitbox_misc_actions\", ${1:array( $this, \"post_submitbox_misc_actions\" )} );"
@@ -1025,6 +1103,9 @@
 	"action: pre-upload-ui":
 		prefix: "pre-upload-ui"
 		body: "add_action( \"pre-upload-ui\", ${1:array( $this, \"pre-upload-ui\" )} );"
+	"action: pre_auto_update":
+		prefix: "pre_auto_update"
+		body: "add_action( \"pre_auto_update\", ${1:array( $this, \"pre_auto_update\" )} );"
 	"action: pre_comment_on_post":
 		prefix: "pre_comment_on_post"
 		body: "add_action( \"pre_comment_on_post\", ${1:array( $this, \"pre_comment_on_post\" )} );"
@@ -1082,6 +1163,9 @@
 	"action: register_form":
 		prefix: "register_form"
 		body: "add_action( \"register_form\", ${1:array( $this, \"register_form\" )} );"
+	"action: register_new_user":
+		prefix: "register_new_user"
+		body: "add_action( \"register_new_user\", ${1:array( $this, \"register_new_user\" )} );"
 	"action: register_post":
 		prefix: "register_post"
 		body: "add_action( \"register_post\", ${1:array( $this, \"register_post\" )} );"
@@ -1103,6 +1187,9 @@
 	"action: resetpass_form":
 		prefix: "resetpass_form"
 		body: "add_action( \"resetpass_form\", ${1:array( $this, \"resetpass_form\" )} );"
+	"action: rest_api_init":
+		prefix: "rest_api_init"
+		body: "add_action( \"rest_api_init\", ${1:array( $this, \"rest_api_init\" )} );"
 	"action: restrict_manage_comments":
 		prefix: "restrict_manage_comments"
 		body: "add_action( \"restrict_manage_comments\", ${1:array( $this, \"restrict_manage_comments\" )} );"
@@ -1340,9 +1427,9 @@
 	"action: update_site_option":
 		prefix: "update_site_option"
 		body: "add_action( \"update_site_option\", ${1:array( $this, \"update_site_option\" )} );"
-	"action: update_site_option_{$option}":
-		prefix: "update_site_option_{$option}"
-		body: "add_action( \"update_site_option_{$option}\", ${1:array( $this, \"update_site_option_{$option}\" )} );"
+	"action: update_site_option_":
+		prefix: "update_site_option_"
+		body: "add_action( \"update_site_option_\", ${1:array( $this, \"update_site_option_\" )} );"
 	"action: update_usermeta":
 		prefix: "update_usermeta"
 		body: "add_action( \"update_usermeta\", ${1:array( $this, \"update_usermeta\" )} );"
@@ -1406,6 +1493,9 @@
 	"action: wp-mail.php":
 		prefix: "wp-mail.php"
 		body: "add_action( \"wp-mail.php\", ${1:array( $this, \"wp-mail.php\" )} );"
+	"action: wp_add_nav_menu_item":
+		prefix: "wp_add_nav_menu_item"
+		body: "add_action( \"wp_add_nav_menu_item\", ${1:array( $this, \"wp_add_nav_menu_item\" )} );"
 	"action: wp_after_admin_bar_render":
 		prefix: "wp_after_admin_bar_render"
 		body: "add_action( \"wp_after_admin_bar_render\", ${1:array( $this, \"wp_after_admin_bar_render\" )} );"
@@ -1478,6 +1568,9 @@
 	"action: wp_logout":
 		prefix: "wp_logout"
 		body: "add_action( \"wp_logout\", ${1:array( $this, \"wp_logout\" )} );"
+	"action: wp_mail_failed":
+		prefix: "wp_mail_failed"
+		body: "add_action( \"wp_mail_failed\", ${1:array( $this, \"wp_mail_failed\" )} );"
 	"action: wp_maybe_auto_update":
 		prefix: "wp_maybe_auto_update"
 		body: "add_action( \"wp_maybe_auto_update\", ${1:array( $this, \"wp_maybe_auto_update\" )} );"
@@ -1532,6 +1625,9 @@
 	"action: wp_user_dashboard_setup":
 		prefix: "wp_user_dashboard_setup"
 		body: "add_action( \"wp_user_dashboard_setup\", ${1:array( $this, \"wp_user_dashboard_setup\" )} );"
+	"action: wp_verify_nonce_failed":
+		prefix: "wp_verify_nonce_failed"
+		body: "add_action( \"wp_verify_nonce_failed\", ${1:array( $this, \"wp_verify_nonce_failed\" )} );"
 	"action: wpmu_activate_blog":
 		prefix: "wpmu_activate_blog"
 		body: "add_action( \"wpmu_activate_blog\", ${1:array( $this, \"wpmu_activate_blog\" )} );"

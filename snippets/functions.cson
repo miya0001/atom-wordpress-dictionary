@@ -209,6 +209,12 @@
 	"function: _get_widget_id_base()":
 		prefix: "_get_widget_id_base"
 		body: "_get_widget_id_base(${1})"
+	"function: _get_wptexturize_shortcode_regex()":
+		prefix: "_get_wptexturize_shortcode_regex"
+		body: "_get_wptexturize_shortcode_regex(${1})"
+	"function: _get_wptexturize_split_regex()":
+		prefix: "_get_wptexturize_split_regex"
+		body: "_get_wptexturize_split_regex(${1})"
 	"function: _hash_hmac()":
 		prefix: "_hash_hmac"
 		body: "_hash_hmac(${1})"
@@ -299,6 +305,15 @@
 	"function: _nx_noop()":
 		prefix: "_nx_noop"
 		body: "_nx_noop(${1})"
+	"function: _oembed_create_xml()":
+		prefix: "_oembed_create_xml"
+		body: "_oembed_create_xml(${1})"
+	"function: _oembed_filter_feed_content()":
+		prefix: "_oembed_filter_feed_content"
+		body: "_oembed_filter_feed_content(${1})"
+	"function: _oembed_rest_pre_serve_request()":
+		prefix: "_oembed_rest_pre_serve_request"
+		body: "_oembed_rest_pre_serve_request(${1})"
 	"function: _pad_term_counts()":
 		prefix: "_pad_term_counts"
 		body: "_pad_term_counts(${1})"
@@ -332,6 +347,9 @@
 	"function: _preview_theme_template_filter()":
 		prefix: "_preview_theme_template_filter"
 		body: "_preview_theme_template_filter(${1})"
+	"function: _prime_comment_caches()":
+		prefix: "_prime_comment_caches"
+		body: "_prime_comment_caches(${1})"
 	"function: _prime_post_caches()":
 		prefix: "_prime_post_caches"
 		body: "_prime_post_caches(${1})"
@@ -446,6 +464,9 @@
 	"function: _upgrade_422_remove_genericons()":
 		prefix: "_upgrade_422_remove_genericons"
 		body: "_upgrade_422_remove_genericons(${1})"
+	"function: _upgrade_440_force_deactivate_incompatible_plugins()":
+		prefix: "_upgrade_440_force_deactivate_incompatible_plugins"
+		body: "_upgrade_440_force_deactivate_incompatible_plugins(${1})"
 	"function: _upgrade_cron_array()":
 		prefix: "_upgrade_cron_array"
 		body: "_upgrade_cron_array(${1})"
@@ -539,6 +560,9 @@
 	"function: _wp_footer_scripts()":
 		prefix: "_wp_footer_scripts"
 		body: "_wp_footer_scripts(${1})"
+	"function: _wp_get_image_size_from_meta()":
+		prefix: "_wp_get_image_size_from_meta"
+		body: "_wp_get_image_size_from_meta(${1})"
 	"function: _wp_get_post_revision_version()":
 		prefix: "_wp_get_post_revision_version"
 		body: "_wp_get_post_revision_version(${1})"
@@ -560,6 +584,9 @@
 	"function: _wp_json_convert_string()":
 		prefix: "_wp_json_convert_string"
 		body: "_wp_json_convert_string(${1})"
+	"function: _wp_json_prepare_data()":
+		prefix: "_wp_json_prepare_data"
+		body: "_wp_json_prepare_data(${1})"
 	"function: _wp_json_sanity_check()":
 		prefix: "_wp_json_sanity_check"
 		body: "_wp_json_sanity_check(${1})"
@@ -647,6 +674,9 @@
 	"function: _wp_upgrade_revisions_of_post()":
 		prefix: "_wp_upgrade_revisions_of_post"
 		body: "_wp_upgrade_revisions_of_post(${1})"
+	"function: _wp_upload_dir_baseurl()":
+		prefix: "_wp_upload_dir_baseurl"
+		body: "_wp_upload_dir_baseurl(${1})"
 	"function: _wptexturize_pushpop_element()":
 		prefix: "_wptexturize_pushpop_element"
 		body: "_wptexturize_pushpop_element(${1})"
@@ -743,6 +773,9 @@
 	"function: add_metadata()":
 		prefix: "add_metadata"
 		body: "add_metadata(${1})"
+	"function: add_network_option()":
+		prefix: "add_network_option"
+		body: "add_network_option(${1})"
 	"function: add_new_user_to_blog()":
 		prefix: "add_new_user_to_blog"
 		body: "add_new_user_to_blog(${1})"
@@ -818,6 +851,9 @@
 	"function: add_submenu_page()":
 		prefix: "add_submenu_page"
 		body: "add_submenu_page(${1})"
+	"function: add_term_meta()":
+		prefix: "add_term_meta"
+		body: "add_term_meta(${1})"
 	"function: add_theme_page()":
 		prefix: "add_theme_page"
 		body: "add_theme_page(${1})"
@@ -860,6 +896,9 @@
 	"function: admin_color_scheme_picker()":
 		prefix: "admin_color_scheme_picker"
 		body: "admin_color_scheme_picker(${1})"
+	"function: admin_created_user_email()":
+		prefix: "admin_created_user_email"
+		body: "admin_created_user_email(${1})"
 	"function: admin_url()":
 		prefix: "admin_url"
 		body: "admin_url(${1})"
@@ -1310,6 +1349,9 @@
 	"function: delete_metadata_by_mid()":
 		prefix: "delete_metadata_by_mid"
 		body: "delete_metadata_by_mid(${1})"
+	"function: delete_network_option()":
+		prefix: "delete_network_option"
+		body: "delete_network_option(${1})"
 	"function: delete_option()":
 		prefix: "delete_option"
 		body: "delete_option(${1})"
@@ -1331,6 +1373,9 @@
 	"function: delete_site_transient()":
 		prefix: "delete_site_transient"
 		body: "delete_site_transient(${1})"
+	"function: delete_term_meta()":
+		prefix: "delete_term_meta"
+		body: "delete_term_meta(${1})"
 	"function: delete_theme()":
 		prefix: "delete_theme"
 		body: "delete_theme(${1})"
@@ -1541,6 +1586,9 @@
 	"function: enqueue_comment_hotkeys_js()":
 		prefix: "enqueue_comment_hotkeys_js"
 		body: "enqueue_comment_hotkeys_js(${1})"
+	"function: enqueue_embed_scripts()":
+		prefix: "enqueue_embed_scripts"
+		body: "enqueue_embed_scripts(${1})"
 	"function: ent2ncr()":
 		prefix: "ent2ncr"
 		body: "ent2ncr(${1})"
@@ -2195,6 +2243,9 @@
 	"function: get_header_image()":
 		prefix: "get_header_image"
 		body: "get_header_image(${1})"
+	"function: get_header_image_tag()":
+		prefix: "get_header_image_tag"
+		body: "get_header_image_tag(${1})"
 	"function: get_header_textcolor()":
 		prefix: "get_header_textcolor"
 		body: "get_header_textcolor(${1})"
@@ -2213,6 +2264,9 @@
 	"function: get_home_url()":
 		prefix: "get_home_url"
 		body: "get_home_url(${1})"
+	"function: get_html_split_regex()":
+		prefix: "get_html_split_regex"
+		body: "get_html_split_regex(${1})"
 	"function: get_http_origin()":
 		prefix: "get_http_origin"
 		body: "get_http_origin(${1})"
@@ -2336,6 +2390,9 @@
 	"function: get_network_by_path()":
 		prefix: "get_network_by_path"
 		body: "get_network_by_path(${1})"
+	"function: get_network_option()":
+		prefix: "get_network_option"
+		body: "get_network_option(${1})"
 	"function: get_next_comments_link()":
 		prefix: "get_next_comments_link"
 		body: "get_next_comments_link(${1})"
@@ -2366,6 +2423,15 @@
 	"function: get_objects_in_term()":
 		prefix: "get_objects_in_term"
 		body: "get_objects_in_term(${1})"
+	"function: get_oembed_endpoint_url()":
+		prefix: "get_oembed_endpoint_url"
+		body: "get_oembed_endpoint_url(${1})"
+	"function: get_oembed_response_data()":
+		prefix: "get_oembed_response_data"
+		body: "get_oembed_response_data(${1})"
+	"function: get_oembed_response_data_rich()":
+		prefix: "get_oembed_response_data_rich"
+		body: "get_oembed_response_data_rich(${1})"
 	"function: get_option()":
 		prefix: "get_option"
 		body: "get_option(${1})"
@@ -2426,6 +2492,9 @@
 	"function: get_parent_post_rel_link()":
 		prefix: "get_parent_post_rel_link"
 		body: "get_parent_post_rel_link(${1})"
+	"function: get_password_reset_key()":
+		prefix: "get_password_reset_key"
+		body: "get_password_reset_key(${1})"
 	"function: get_pending_comments_num()":
 		prefix: "get_pending_comments_num"
 		body: "get_pending_comments_num(${1})"
@@ -2471,6 +2540,12 @@
 	"function: get_post_custom_values()":
 		prefix: "get_post_custom_values"
 		body: "get_post_custom_values(${1})"
+	"function: get_post_embed_html()":
+		prefix: "get_post_embed_html"
+		body: "get_post_embed_html(${1})"
+	"function: get_post_embed_url()":
+		prefix: "get_post_embed_url"
+		body: "get_post_embed_url(${1})"
 	"function: get_post_field()":
 		prefix: "get_post_field"
 		body: "get_post_field(${1})"
@@ -2585,6 +2660,9 @@
 	"function: get_preferred_from_update_core()":
 		prefix: "get_preferred_from_update_core"
 		body: "get_preferred_from_update_core(${1})"
+	"function: get_preview_post_link()":
+		prefix: "get_preview_post_link"
+		body: "get_preview_post_link(${1})"
 	"function: get_previous_comments_link()":
 		prefix: "get_previous_comments_link"
 		body: "get_previous_comments_link(${1})"
@@ -2633,6 +2711,9 @@
 	"function: get_registered_nav_menus()":
 		prefix: "get_registered_nav_menus"
 		body: "get_registered_nav_menus(${1})"
+	"function: get_rest_url()":
+		prefix: "get_rest_url"
+		body: "get_rest_url(${1})"
 	"function: get_role()":
 		prefix: "get_role"
 		body: "get_role(${1})"
@@ -2672,6 +2753,9 @@
 	"function: get_settings_errors()":
 		prefix: "get_settings_errors"
 		body: "get_settings_errors(${1})"
+	"function: get_shortcode_atts_regex()":
+		prefix: "get_shortcode_atts_regex"
+		body: "get_shortcode_atts_regex(${1})"
 	"function: get_shortcode_regex()":
 		prefix: "get_shortcode_regex"
 		body: "get_shortcode_regex(${1})"
@@ -2729,6 +2813,9 @@
 	"function: get_stylesheet_uri()":
 		prefix: "get_stylesheet_uri"
 		body: "get_stylesheet_uri(${1})"
+	"function: get_subdirectory_reserved_names()":
+		prefix: "get_subdirectory_reserved_names"
+		body: "get_subdirectory_reserved_names(${1})"
 	"function: get_submit_button()":
 		prefix: "get_submit_button"
 		body: "get_submit_button(${1})"
@@ -2807,6 +2894,9 @@
 	"function: get_term_link()":
 		prefix: "get_term_link"
 		body: "get_term_link(${1})"
+	"function: get_term_meta()":
+		prefix: "get_term_meta"
+		body: "get_term_meta(${1})"
 	"function: get_term_to_edit()":
 		prefix: "get_term_to_edit"
 		body: "get_term_to_edit(${1})"
@@ -2870,6 +2960,9 @@
 	"function: get_the_author_posts()":
 		prefix: "get_the_author_posts"
 		body: "get_the_author_posts(${1})"
+	"function: get_the_author_posts_link()":
+		prefix: "get_the_author_posts_link"
+		body: "get_the_author_posts_link(${1})"
 	"function: get_the_author_url()":
 		prefix: "get_the_author_url"
 		body: "get_the_author_url(${1})"
@@ -2888,6 +2981,12 @@
 	"function: get_the_category_rss()":
 		prefix: "get_the_category_rss"
 		body: "get_the_category_rss(${1})"
+	"function: get_the_comments_navigation()":
+		prefix: "get_the_comments_navigation"
+		body: "get_the_comments_navigation(${1})"
+	"function: get_the_comments_pagination()":
+		prefix: "get_the_comments_pagination"
+		body: "get_the_comments_pagination(${1})"
 	"function: get_the_content()":
 		prefix: "get_the_content"
 		body: "get_the_content(${1})"
@@ -2927,6 +3026,9 @@
 	"function: get_the_post_thumbnail()":
 		prefix: "get_the_post_thumbnail"
 		body: "get_the_post_thumbnail(${1})"
+	"function: get_the_post_thumbnail_url()":
+		prefix: "get_the_post_thumbnail_url"
+		body: "get_the_post_thumbnail_url(${1})"
 	"function: get_the_posts_navigation()":
 		prefix: "get_the_posts_navigation"
 		body: "get_the_posts_navigation(${1})"
@@ -3386,6 +3488,9 @@
 	"function: is_email_address_unsafe()":
 		prefix: "is_email_address_unsafe"
 		body: "is_email_address_unsafe(${1})"
+	"function: is_embed()":
+		prefix: "is_embed"
+		body: "is_embed(${1})"
 	"function: is_error()":
 		prefix: "is_error"
 		body: "is_error(${1})"
@@ -3476,6 +3581,9 @@
 	"function: is_post_type_hierarchical()":
 		prefix: "is_post_type_hierarchical"
 		body: "is_post_type_hierarchical(${1})"
+	"function: is_post_type_viewable()":
+		prefix: "is_post_type_viewable"
+		body: "is_post_type_viewable(${1})"
 	"function: is_preview()":
 		prefix: "is_preview"
 		body: "is_preview(${1})"
@@ -3488,6 +3596,9 @@
 	"function: is_redirect()":
 		prefix: "is_redirect"
 		body: "is_redirect(${1})"
+	"function: is_registered_sidebar()":
+		prefix: "is_registered_sidebar"
+		body: "is_registered_sidebar(${1})"
 	"function: is_robots()":
 		prefix: "is_robots"
 		body: "is_robots(${1})"
@@ -3725,6 +3836,9 @@
 	"function: make_url_footnote()":
 		prefix: "make_url_footnote"
 		body: "make_url_footnote(${1})"
+	"function: map_deep()":
+		prefix: "map_deep"
+		body: "map_deep(${1})"
 	"function: map_meta_cap()":
 		prefix: "map_meta_cap"
 		body: "map_meta_cap(${1})"
@@ -3890,6 +4004,9 @@
 	"function: mysql2date()":
 		prefix: "mysql2date"
 		body: "mysql2date(${1})"
+	"function: mysql_to_rfc3339()":
+		prefix: "mysql_to_rfc3339"
+		body: "mysql_to_rfc3339(${1})"
 	"function: network_admin_url()":
 		prefix: "network_admin_url"
 		body: "network_admin_url(${1})"
@@ -4028,6 +4145,9 @@
 	"function: plugin_dir_url()":
 		prefix: "plugin_dir_url"
 		body: "plugin_dir_url(${1})"
+	"function: plugin_sandbox_scrape()":
+		prefix: "plugin_sandbox_scrape"
+		body: "plugin_sandbox_scrape(${1})"
 	"function: plugins_api()":
 		prefix: "plugins_api"
 		body: "plugins_api(${1})"
@@ -4199,6 +4319,21 @@
 	"function: print_column_headers()":
 		prefix: "print_column_headers"
 		body: "print_column_headers(${1})"
+	"function: print_embed_comments_button()":
+		prefix: "print_embed_comments_button"
+		body: "print_embed_comments_button(${1})"
+	"function: print_embed_scripts()":
+		prefix: "print_embed_scripts"
+		body: "print_embed_scripts(${1})"
+	"function: print_embed_sharing_button()":
+		prefix: "print_embed_sharing_button"
+		body: "print_embed_sharing_button(${1})"
+	"function: print_embed_sharing_dialog()":
+		prefix: "print_embed_sharing_dialog"
+		body: "print_embed_sharing_dialog(${1})"
+	"function: print_embed_styles()":
+		prefix: "print_embed_styles"
+		body: "print_embed_styles(${1})"
 	"function: print_emoji_detection_script()":
 		prefix: "print_emoji_detection_script"
 		body: "print_emoji_detection_script(${1})"
@@ -4220,6 +4355,12 @@
 	"function: query_posts()":
 		prefix: "query_posts"
 		body: "query_posts(${1})"
+	"function: random_bytes()":
+		prefix: "random_bytes"
+		body: "random_bytes(${1})"
+	"function: random_int()":
+		prefix: "random_int"
+		body: "random_int(${1})"
 	"function: rawurlencode_deep()":
 		prefix: "rawurlencode_deep"
 		body: "rawurlencode_deep(${1})"
@@ -4280,6 +4421,9 @@
 	"function: register_post_type()":
 		prefix: "register_post_type"
 		body: "register_post_type(${1})"
+	"function: register_rest_route()":
+		prefix: "register_rest_route"
+		body: "register_rest_route(${1})"
 	"function: register_setting()":
 		prefix: "register_setting"
 		body: "register_setting(${1})"
@@ -4397,6 +4541,69 @@
 	"function: reset_password()":
 		prefix: "reset_password"
 		body: "reset_password(${1})"
+	"function: rest_api_default_filters()":
+		prefix: "rest_api_default_filters"
+		body: "rest_api_default_filters(${1})"
+	"function: rest_api_init()":
+		prefix: "rest_api_init"
+		body: "rest_api_init(${1})"
+	"function: rest_api_loaded()":
+		prefix: "rest_api_loaded"
+		body: "rest_api_loaded(${1})"
+	"function: rest_api_register_rewrites()":
+		prefix: "rest_api_register_rewrites"
+		body: "rest_api_register_rewrites(${1})"
+	"function: rest_cookie_check_errors()":
+		prefix: "rest_cookie_check_errors"
+		body: "rest_cookie_check_errors(${1})"
+	"function: rest_cookie_collect_status()":
+		prefix: "rest_cookie_collect_status"
+		body: "rest_cookie_collect_status(${1})"
+	"function: rest_do_request()":
+		prefix: "rest_do_request"
+		body: "rest_do_request(${1})"
+	"function: rest_ensure_request()":
+		prefix: "rest_ensure_request"
+		body: "rest_ensure_request(${1})"
+	"function: rest_ensure_response()":
+		prefix: "rest_ensure_response"
+		body: "rest_ensure_response(${1})"
+	"function: rest_get_date_with_gmt()":
+		prefix: "rest_get_date_with_gmt"
+		body: "rest_get_date_with_gmt(${1})"
+	"function: rest_get_url_prefix()":
+		prefix: "rest_get_url_prefix"
+		body: "rest_get_url_prefix(${1})"
+	"function: rest_handle_deprecated_argument()":
+		prefix: "rest_handle_deprecated_argument"
+		body: "rest_handle_deprecated_argument(${1})"
+	"function: rest_handle_deprecated_function()":
+		prefix: "rest_handle_deprecated_function"
+		body: "rest_handle_deprecated_function(${1})"
+	"function: rest_handle_options_request()":
+		prefix: "rest_handle_options_request"
+		body: "rest_handle_options_request(${1})"
+	"function: rest_output_link_header()":
+		prefix: "rest_output_link_header"
+		body: "rest_output_link_header(${1})"
+	"function: rest_output_link_wp_head()":
+		prefix: "rest_output_link_wp_head"
+		body: "rest_output_link_wp_head(${1})"
+	"function: rest_output_rsd()":
+		prefix: "rest_output_rsd"
+		body: "rest_output_rsd(${1})"
+	"function: rest_parse_date()":
+		prefix: "rest_parse_date"
+		body: "rest_parse_date(${1})"
+	"function: rest_send_allow_header()":
+		prefix: "rest_send_allow_header"
+		body: "rest_send_allow_header(${1})"
+	"function: rest_send_cors_headers()":
+		prefix: "rest_send_cors_headers"
+		body: "rest_send_cors_headers(${1})"
+	"function: rest_url()":
+		prefix: "rest_url"
+		body: "rest_url(${1})"
 	"function: restore_current_blog()":
 		prefix: "restore_current_blog"
 		body: "restore_current_blog(${1})"
@@ -4655,6 +4862,9 @@
 	"function: signup_blog()":
 		prefix: "signup_blog"
 		body: "signup_blog(${1})"
+	"function: signup_get_available_languages()":
+		prefix: "signup_get_available_languages"
+		body: "signup_get_available_languages(${1})"
 	"function: signup_nonce_check()":
 		prefix: "signup_nonce_check"
 		body: "signup_nonce_check(${1})"
@@ -4718,6 +4928,9 @@
 	"function: stream_preview_image()":
 		prefix: "stream_preview_image"
 		body: "stream_preview_image(${1})"
+	"function: strip_fragment_from_url()":
+		prefix: "strip_fragment_from_url"
+		body: "strip_fragment_from_url(${1})"
 	"function: strip_shortcode_tag()":
 		prefix: "strip_shortcode_tag"
 		body: "strip_shortcode_tag(${1})"
@@ -4727,6 +4940,9 @@
 	"function: stripslashes_deep()":
 		prefix: "stripslashes_deep"
 		body: "stripslashes_deep(${1})"
+	"function: stripslashes_from_strings_only()":
+		prefix: "stripslashes_from_strings_only"
+		body: "stripslashes_from_strings_only(${1})"
 	"function: submit_button()":
 		prefix: "submit_button"
 		body: "submit_button(${1})"
@@ -4844,6 +5060,12 @@
 	"function: the_comment()":
 		prefix: "the_comment"
 		body: "the_comment(${1})"
+	"function: the_comments_navigation()":
+		prefix: "the_comments_navigation"
+		body: "the_comments_navigation(${1})"
+	"function: the_comments_pagination()":
+		prefix: "the_comments_pagination"
+		body: "the_comments_pagination(${1})"
 	"function: the_content()":
 		prefix: "the_content"
 		body: "the_content(${1})"
@@ -4865,6 +5087,9 @@
 	"function: the_excerpt()":
 		prefix: "the_excerpt"
 		body: "the_excerpt(${1})"
+	"function: the_excerpt_embed()":
+		prefix: "the_excerpt_embed"
+		body: "the_excerpt_embed(${1})"
 	"function: the_excerpt_rss()":
 		prefix: "the_excerpt_rss"
 		body: "the_excerpt_rss(${1})"
@@ -4877,6 +5102,9 @@
 	"function: the_guid()":
 		prefix: "the_guid"
 		body: "the_guid(${1})"
+	"function: the_header_image_tag()":
+		prefix: "the_header_image_tag"
+		body: "the_header_image_tag(${1})"
 	"function: the_media_upload_tabs()":
 		prefix: "the_media_upload_tabs"
 		body: "the_media_upload_tabs(${1})"
@@ -4910,6 +5138,9 @@
 	"function: the_post_thumbnail()":
 		prefix: "the_post_thumbnail"
 		body: "the_post_thumbnail(${1})"
+	"function: the_post_thumbnail_url()":
+		prefix: "the_post_thumbnail_url"
+		body: "the_post_thumbnail_url(${1})"
 	"function: the_posts_navigation()":
 		prefix: "the_posts_navigation"
 		body: "the_posts_navigation(${1})"
@@ -5120,6 +5351,9 @@
 	"function: update_nag()":
 		prefix: "update_nag"
 		body: "update_nag(${1})"
+	"function: update_network_option()":
+		prefix: "update_network_option"
+		body: "update_network_option(${1})"
 	"function: update_object_term_cache()":
 		prefix: "update_object_term_cache"
 		body: "update_object_term_cache(${1})"
@@ -5162,6 +5396,12 @@
 	"function: update_term_cache()":
 		prefix: "update_term_cache"
 		body: "update_term_cache(${1})"
+	"function: update_term_meta()":
+		prefix: "update_term_meta"
+		body: "update_term_meta(${1})"
+	"function: update_termmeta_cache()":
+		prefix: "update_termmeta_cache"
+		body: "update_termmeta_cache(${1})"
 	"function: update_user_caches()":
 		prefix: "update_user_caches"
 		body: "update_user_caches(${1})"
@@ -5255,6 +5495,12 @@
 	"function: upgrade_430_fix_comments()":
 		prefix: "upgrade_430_fix_comments"
 		body: "upgrade_430_fix_comments(${1})"
+	"function: upgrade_431()":
+		prefix: "upgrade_431"
+		body: "upgrade_431(${1})"
+	"function: upgrade_440()":
+		prefix: "upgrade_440"
+		body: "upgrade_440(${1})"
 	"function: upgrade_all()":
 		prefix: "upgrade_all"
 		body: "upgrade_all(${1})"
@@ -5285,6 +5531,9 @@
 	"function: url_to_postid()":
 		prefix: "url_to_postid"
 		body: "url_to_postid(${1})"
+	"function: urldecode_deep()":
+		prefix: "urldecode_deep"
+		body: "urldecode_deep(${1})"
 	"function: urlencode_deep()":
 		prefix: "urlencode_deep"
 		body: "urlencode_deep(${1})"
@@ -5537,6 +5786,9 @@
 	"function: wp_ajax_delete_comment()":
 		prefix: "wp_ajax_delete_comment"
 		body: "wp_ajax_delete_comment(${1})"
+	"function: wp_ajax_delete_inactive_widgets()":
+		prefix: "wp_ajax_delete_inactive_widgets"
+		body: "wp_ajax_delete_inactive_widgets(${1})"
 	"function: wp_ajax_delete_link()":
 		prefix: "wp_ajax_delete_link"
 		body: "wp_ajax_delete_link(${1})"
@@ -5570,6 +5822,9 @@
 	"function: wp_ajax_find_posts()":
 		prefix: "wp_ajax_find_posts"
 		body: "wp_ajax_find_posts(${1})"
+	"function: wp_ajax_generate_password()":
+		prefix: "wp_ajax_generate_password"
+		body: "wp_ajax_generate_password(${1})"
 	"function: wp_ajax_get_attachment()":
 		prefix: "wp_ajax_get_attachment"
 		body: "wp_ajax_get_attachment(${1})"
@@ -5663,6 +5918,9 @@
 	"function: wp_ajax_save_widget()":
 		prefix: "wp_ajax_save_widget"
 		body: "wp_ajax_save_widget(${1})"
+	"function: wp_ajax_save_wporg_username()":
+		prefix: "wp_ajax_save_wporg_username"
+		body: "wp_ajax_save_wporg_username(${1})"
 	"function: wp_ajax_send_attachment_to_editor()":
 		prefix: "wp_ajax_send_attachment_to_editor"
 		body: "wp_ajax_send_attachment_to_editor(${1})"
@@ -5804,6 +6062,12 @@
 	"function: wp_cache_switch_to_blog()":
 		prefix: "wp_cache_switch_to_blog"
 		body: "wp_cache_switch_to_blog(${1})"
+	"function: wp_calculate_image_sizes()":
+		prefix: "wp_calculate_image_sizes"
+		body: "wp_calculate_image_sizes(${1})"
+	"function: wp_calculate_image_srcset()":
+		prefix: "wp_calculate_image_srcset"
+		body: "wp_calculate_image_srcset(${1})"
 	"function: wp_can_install_language_pack()":
 		prefix: "wp_can_install_language_pack"
 		body: "wp_can_install_language_pack(${1})"
@@ -6158,6 +6422,12 @@
 	"function: wp_embed_defaults()":
 		prefix: "wp_embed_defaults"
 		body: "wp_embed_defaults(${1})"
+	"function: wp_embed_excerpt_attachment()":
+		prefix: "wp_embed_excerpt_attachment"
+		body: "wp_embed_excerpt_attachment(${1})"
+	"function: wp_embed_excerpt_more()":
+		prefix: "wp_embed_excerpt_more"
+		body: "wp_embed_excerpt_more(${1})"
 	"function: wp_embed_handler_audio()":
 		prefix: "wp_embed_handler_audio"
 		body: "wp_embed_handler_audio(${1})"
@@ -6224,6 +6494,9 @@
 	"function: wp_filter_object_list()":
 		prefix: "wp_filter_object_list"
 		body: "wp_filter_object_list(${1})"
+	"function: wp_filter_oembed_result()":
+		prefix: "wp_filter_oembed_result"
+		body: "wp_filter_oembed_result(${1})"
 	"function: wp_filter_post_kses()":
 		prefix: "wp_filter_post_kses"
 		body: "wp_filter_post_kses(${1})"
@@ -6278,9 +6551,18 @@
 	"function: wp_get_attachment_image()":
 		prefix: "wp_get_attachment_image"
 		body: "wp_get_attachment_image(${1})"
+	"function: wp_get_attachment_image_sizes()":
+		prefix: "wp_get_attachment_image_sizes"
+		body: "wp_get_attachment_image_sizes(${1})"
 	"function: wp_get_attachment_image_src()":
 		prefix: "wp_get_attachment_image_src"
 		body: "wp_get_attachment_image_src(${1})"
+	"function: wp_get_attachment_image_srcset()":
+		prefix: "wp_get_attachment_image_srcset"
+		body: "wp_get_attachment_image_srcset(${1})"
+	"function: wp_get_attachment_image_url()":
+		prefix: "wp_get_attachment_image_url"
+		body: "wp_get_attachment_image_url(${1})"
 	"function: wp_get_attachment_link()":
 		prefix: "wp_get_attachment_link"
 		body: "wp_get_attachment_link(${1})"
@@ -6317,6 +6599,9 @@
 	"function: wp_get_db_schema()":
 		prefix: "wp_get_db_schema"
 		body: "wp_get_db_schema(${1})"
+	"function: wp_get_document_title()":
+		prefix: "wp_get_document_title"
+		body: "wp_get_document_title(${1})"
 	"function: wp_get_http()":
 		prefix: "wp_get_http"
 		body: "wp_get_http(${1})"
@@ -6416,6 +6701,9 @@
 	"function: wp_get_schedules()":
 		prefix: "wp_get_schedules"
 		body: "wp_get_schedules(${1})"
+	"function: wp_get_server_protocol()":
+		prefix: "wp_get_server_protocol"
+		body: "wp_get_server_protocol(${1})"
 	"function: wp_get_session_token()":
 		prefix: "wp_get_session_token"
 		body: "wp_get_session_token(${1})"
@@ -6455,6 +6743,9 @@
 	"function: wp_get_user_contact_methods()":
 		prefix: "wp_get_user_contact_methods"
 		body: "wp_get_user_contact_methods(${1})"
+	"function: wp_get_users_with_no_role()":
+		prefix: "wp_get_users_with_no_role"
+		body: "wp_get_users_with_no_role(${1})"
 	"function: wp_get_video_extensions()":
 		prefix: "wp_get_video_extensions"
 		body: "wp_get_video_extensions(${1})"
@@ -6464,6 +6755,9 @@
 	"function: wp_guess_url()":
 		prefix: "wp_guess_url"
 		body: "wp_guess_url(${1})"
+	"function: wp_handle_comment_submission()":
+		prefix: "wp_handle_comment_submission"
+		body: "wp_handle_comment_submission(${1})"
 	"function: wp_handle_sideload()":
 		prefix: "wp_handle_sideload"
 		body: "wp_handle_sideload(${1})"
@@ -6503,6 +6797,9 @@
 	"function: wp_iframe()":
 		prefix: "wp_iframe"
 		body: "wp_iframe(${1})"
+	"function: wp_image_add_srcset_and_sizes()":
+		prefix: "wp_image_add_srcset_and_sizes"
+		body: "wp_image_add_srcset_and_sizes(${1})"
 	"function: wp_image_editor()":
 		prefix: "wp_image_editor"
 		body: "wp_image_editor(${1})"
@@ -6560,12 +6857,18 @@
 	"function: wp_install_maybe_enable_pretty_permalinks()":
 		prefix: "wp_install_maybe_enable_pretty_permalinks"
 		body: "wp_install_maybe_enable_pretty_permalinks(${1})"
+	"function: wp_installing()":
+		prefix: "wp_installing"
+		body: "wp_installing(${1})"
 	"function: wp_is_large_network()":
 		prefix: "wp_is_large_network"
 		body: "wp_is_large_network(${1})"
 	"function: wp_is_mobile()":
 		prefix: "wp_is_mobile"
 		body: "wp_is_mobile(${1})"
+	"function: wp_is_numeric_array()":
+		prefix: "wp_is_numeric_array"
+		body: "wp_is_numeric_array(${1})"
 	"function: wp_is_post_autosave()":
 		prefix: "wp_is_post_autosave"
 		body: "wp_is_post_autosave(${1})"
@@ -6764,6 +7067,9 @@
 	"function: wp_maintenance()":
 		prefix: "wp_maintenance"
 		body: "wp_maintenance(${1})"
+	"function: wp_make_content_images_responsive()":
+		prefix: "wp_make_content_images_responsive"
+		body: "wp_make_content_images_responsive(${1})"
 	"function: wp_make_link_relative()":
 		prefix: "wp_make_link_relative"
 		body: "wp_make_link_relative(${1})"
@@ -6776,6 +7082,9 @@
 	"function: wp_maybe_auto_update()":
 		prefix: "wp_maybe_auto_update"
 		body: "wp_maybe_auto_update(${1})"
+	"function: wp_maybe_decline_date()":
+		prefix: "wp_maybe_decline_date"
+		body: "wp_maybe_decline_date(${1})"
 	"function: wp_maybe_generate_attachment_metadata()":
 		prefix: "wp_maybe_generate_attachment_metadata"
 		body: "wp_maybe_generate_attachment_metadata(${1})"
@@ -6857,6 +7166,12 @@
 	"function: wp_new_comment()":
 		prefix: "wp_new_comment"
 		body: "wp_new_comment(${1})"
+	"function: wp_new_comment_notify_moderator()":
+		prefix: "wp_new_comment_notify_moderator"
+		body: "wp_new_comment_notify_moderator(${1})"
+	"function: wp_new_comment_notify_postauthor()":
+		prefix: "wp_new_comment_notify_postauthor"
+		body: "wp_new_comment_notify_postauthor(${1})"
 	"function: wp_new_user_notification()":
 		prefix: "wp_new_user_notification"
 		body: "wp_new_user_notification(${1})"
@@ -6893,12 +7208,24 @@
 	"function: wp_ob_end_flush_all()":
 		prefix: "wp_ob_end_flush_all"
 		body: "wp_ob_end_flush_all(${1})"
+	"function: wp_oembed_add_discovery_links()":
+		prefix: "wp_oembed_add_discovery_links"
+		body: "wp_oembed_add_discovery_links(${1})"
+	"function: wp_oembed_add_host_js()":
+		prefix: "wp_oembed_add_host_js"
+		body: "wp_oembed_add_host_js(${1})"
 	"function: wp_oembed_add_provider()":
 		prefix: "wp_oembed_add_provider"
 		body: "wp_oembed_add_provider(${1})"
+	"function: wp_oembed_ensure_format()":
+		prefix: "wp_oembed_ensure_format"
+		body: "wp_oembed_ensure_format(${1})"
 	"function: wp_oembed_get()":
 		prefix: "wp_oembed_get"
 		body: "wp_oembed_get(${1})"
+	"function: wp_oembed_register_route()":
+		prefix: "wp_oembed_register_route"
+		body: "wp_oembed_register_route(${1})"
 	"function: wp_oembed_remove_provider()":
 		prefix: "wp_oembed_remove_provider"
 		body: "wp_oembed_remove_provider(${1})"
@@ -6923,6 +7250,9 @@
 	"function: wp_parse_str()":
 		prefix: "wp_parse_str"
 		body: "wp_parse_str(${1})"
+	"function: wp_parse_url()":
+		prefix: "wp_parse_url"
+		body: "wp_parse_url(${1})"
 	"function: wp_password_change_notification()":
 		prefix: "wp_password_change_notification"
 		body: "wp_password_change_notification(${1})"
@@ -7085,6 +7415,15 @@
 	"function: wp_remote_retrieve_body()":
 		prefix: "wp_remote_retrieve_body"
 		body: "wp_remote_retrieve_body(${1})"
+	"function: wp_remote_retrieve_cookie()":
+		prefix: "wp_remote_retrieve_cookie"
+		body: "wp_remote_retrieve_cookie(${1})"
+	"function: wp_remote_retrieve_cookie_value()":
+		prefix: "wp_remote_retrieve_cookie_value"
+		body: "wp_remote_retrieve_cookie_value(${1})"
+	"function: wp_remote_retrieve_cookies()":
+		prefix: "wp_remote_retrieve_cookies"
+		body: "wp_remote_retrieve_cookies(${1})"
 	"function: wp_remote_retrieve_header()":
 		prefix: "wp_remote_retrieve_header"
 		body: "wp_remote_retrieve_header(${1})"
@@ -7097,6 +7436,9 @@
 	"function: wp_remote_retrieve_response_message()":
 		prefix: "wp_remote_retrieve_response_message"
 		body: "wp_remote_retrieve_response_message(${1})"
+	"function: wp_removable_query_args()":
+		prefix: "wp_removable_query_args"
+		body: "wp_removable_query_args(${1})"
 	"function: wp_remove_object_terms()":
 		prefix: "wp_remove_object_terms"
 		body: "wp_remove_object_terms(${1})"
@@ -7208,6 +7550,9 @@
 	"function: wp_send_json_success()":
 		prefix: "wp_send_json_success"
 		body: "wp_send_json_success(${1})"
+	"function: wp_send_new_user_notifications()":
+		prefix: "wp_send_new_user_notifications"
+		body: "wp_send_new_user_notifications(${1})"
 	"function: wp_set_all_user_settings()":
 		prefix: "wp_set_all_user_settings"
 		body: "wp_set_all_user_settings(${1})"
@@ -7361,6 +7706,9 @@
 	"function: wp_tempnam()":
 		prefix: "wp_tempnam"
 		body: "wp_tempnam(${1})"
+	"function: wp_term_is_shared()":
+		prefix: "wp_term_is_shared"
+		body: "wp_term_is_shared(${1})"
 	"function: wp_terms_checklist()":
 		prefix: "wp_terms_checklist"
 		body: "wp_terms_checklist(${1})"
