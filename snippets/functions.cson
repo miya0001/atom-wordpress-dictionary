@@ -5067,7 +5067,7 @@
 		prefix: "the_comments_pagination"
 		body: "the_comments_pagination(${1})"
 	"function: the_content()":
-		prefix: "the_content"
+		prefix: "the_content()"
 		body: "the_content(${1})"
 	"function: the_content_feed()":
 		prefix: "the_content_feed"
